@@ -1,3 +1,128 @@
+.group        { 
+    position:relative; 
+    margin-bottom:45px; 
+  }
+
+  input         {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+  }
+
+  input:focus     { outline:none; }
+
+
+  label          {
+    color:#999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+  }
+  
+  /* active state */
+  input:focus ~ label, input:valid ~ label     {
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+  }
+
+  #errmsg
+  {
+    color:red;
+  
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+  }
+
+  #errmsg2
+  {
+    color:red;
+  
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+  }
+
+/* BOTTOM BARS ================================= */
+.bar  { position:relative; display:block; width:300px; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    background-color: #fff4e6;
+  }
+  
+  .box1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    z-index: 2;
+    
+  }
+
+  .box2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    z-index: 2;
+  
+  }
+  
+   * {box-sizing: border-box;}
+  
+   
+  .box {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+  }
+  
+
 body {
     text-align: center;
 }
@@ -42,20 +167,36 @@ input[type=number] {
     width: 6em;
 }
 
-button {
-    background: none;
-    outline: none;
-    border: none;
-    text-transform: uppercase;
+.myButton {
+	-moz-box-shadow: 4px 3px 12px -4px #3dc21b;
+	-webkit-box-shadow: 4px 3px 12px -4px #3dc21b;
+	box-shadow: 4px 3px 12px -4px #3dc21b;
+	background-color:#44c767;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:21px;
+	font-weight:bold;
+	padding:10px 60px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
 
-button:hover, button:focus {
-    color: hsla(108, 12%, 0%, 1);
-    box-shadow: -1px 1px 2px hsla(108, 62%, 42%, 1);
-    background-color: hsla(108, 62%, 92%, 1)
-}
-button:active {
-    color: hsla(108, 42%, 32%, 1);
-    box-shadow: -2px 4px 8px hsla(64, 64%, 42%, 1);
-    background-color: hsla(64, 64%, 92%, 1);
+.myButton:disabled,
+.myBbutton[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }

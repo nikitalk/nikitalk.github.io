@@ -1,7 +1,69 @@
 $(function(){
 
+
 // Select color input
 // Select size input
+
+$("#input_width").keypress(function (e) {
+  //if the letter is not digit then display error and don't type anything
+  if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+     //display error message
+     $("#errmsg2").html("Digits Only").show().fadeOut("slow");
+            return false;
+ };
+ 
+});
+
+$("#input_height").keypress(function (e) {
+  //if the letter is not digit then display error and don't type anything
+  if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+     //display error message
+     $("#errmsg").html("Digits Only").show().fadeOut("slow");
+     
+                 return false;
+ };
+});
+
+$("#input_height").keyup(function (e) {
+  //if the letter is not digit then display error and don't type anything
+  if ($(this).val()>=50) {
+     //display error message
+     $("#errmsg").html("Very big").show().fadeOut("slow");
+     $(this).val($(this).val().slice(0, -1));
+                 return false;
+ } else if ($(this).val()==0) {
+  $("#errmsg").html("not zero").show().fadeOut("slow");
+  
+              return false;
+ };
+});
+
+
+$("#input_width").keyup(function (e) {
+  //if the letter is not digit then display error and don't type anything
+  if ($(this).val()>=50) {
+     //display error message
+     $("#errmsg2").html("Very big").show().fadeOut("slow");
+     $(this).val($(this).val().slice(0, -1));
+                 return false;
+ } else if ($(this).val()==0) {
+  $("#errmsg2").html("not zero").show().fadeOut("slow");
+ 
+              return false;
+ };
+});
+
+$("#submit_size").prop('disabled', true);
+// при отпускании клавиши, проверить значение данного поля
+$(this).keyup(function() {
+  // если значение не равно пустой строке
+  if(($("#input_width").val() != '') && ($("#input_height").val() != '')) {
+    // то сделать кнопку активной (т.е. установить свойству disabled кнопки значение false             
+    $("#submit_size").prop('disabled', false);
+  }
+});
+
+
 
 $("#submit_size").click(function (event){
     event.preventDefault();
