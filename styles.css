@@ -2,7 +2,7 @@
   display: grid;
   grid-gap: 0px;    
   grid-template-columns: 310px auto;
-  grid-template-rows: 60px 550px 50px;
+  grid-template-rows: 60px auto 50px;
   grid-template-areas:
       "h h"
       "m c"
@@ -48,7 +48,7 @@
 
 @media screen and (max-width: 800px) {
   .container {
-     grid-template-rows: 60px 370px 600px 50px;
+     grid-template-rows: 60px 370px auto 50px;
      grid-template-areas:
      "h h"
      "m m"
@@ -147,6 +147,7 @@ h1 {
 .gridtable {
   border-collapse: collapse;
   margin: 0 auto;
+  margin-bottom:40px;
 }
 
 .gridtd {
@@ -214,4 +215,5 @@ input[type=text] {
   border: solid 2px #ddd;
   border-radius: 60px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
