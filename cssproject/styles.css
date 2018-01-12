@@ -1,0 +1,33 @@
+#cardy {
+    width: 300px;
+    border: 1px solid rgb(197, 197, 197);
+    box-shadow: 10px 10px 31px -9px rgba(184,184,184,1);
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.image {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.description {
+   border: 1px solid rgb(197, 197, 197); 
+   padding-left: 10px;
+   padding-right: 10px
+   width: 280px;
+}
+
+.shortdesc {
+    font-style: italic;
+}
+
+.list {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.listmaintext {
+    font-size: 17px;
+    font-weight: bold;
+}
