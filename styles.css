@@ -154,7 +154,9 @@ h1 {
     margin:1px;
     background: rgb(209, 209, 209);
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 10px 5px 5px 5px;
+    -webkit-border-radius:6px 5px 5px 5px;
+    -moz-border-radius:4px 5px 5px 5px;
  }
 
 input[type=text] {
