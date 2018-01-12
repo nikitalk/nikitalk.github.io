@@ -118,7 +118,7 @@ function makeGrid() {
   let t="<tbody>";
   let widthScreen = $("body").innerWidth();
   console.log(widthScreen);
-  if (widthScreen < 450) {
+  if (widthScreen > 450) {
   let ws=widthScreen
     } else {let ws=450}
   let tdsize = gridHeight > gridWidth ? ws / gridWidth : ws / gridHeight;
