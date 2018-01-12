@@ -113,18 +113,19 @@ $("#submit_size").on("click", function (event){
 //drawing the grid
 function makeGrid() {
   $("#pixel_canvas tbody").remove();
-  let gridHeight = $("#input_height").val();
-  let gridWidth = $("#input_width").val();
+  let gridHeight = Math.floor($("#input_height").val());
+  let gridWidth = Math.floor($("#input_width").val());
   let t="<tbody>";
   let ws = $("body").innerWidth() < ($("body").innerHeight()-100) ? $("body").innerWidth() : ($("body").innerHeight()-100);
   let tdsize;
-  if (gridHeight < gridWidth) {
+  if (gridHeight > gridWidth) {
     tdsize = Math.floor(ws / gridHeight)
+
   } else { 
            tdsize=Math.floor(ws / gridWidth)
          }
   for (let i = 0; i < gridHeight; i++) {
-    t += "<tr class='gridtr' style='height:" + tdsize + "px;'>";
+    t += "<tr style='height:" + tdsize + "px;'>";
     for (let j = 0; j < gridWidth; j++) {
       t += "<td class='pxcol gridtd' style='width:" + tdsize + "px;'></td>";
     };
