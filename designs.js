@@ -117,11 +117,16 @@ function makeGrid() {
   let gridWidth = $("#input_width").val();
   let t="<tbody>";
   let ws = $("body").innerWidth() < ($("body").innerHeight()-100) ? $("body").innerWidth() : ($("body").innerHeight()-100);
-  let tdsize = gridHeight < gridWidth ? ws / gridWidth : ws / gridHeight;
+  let tdsize;
+  if (gridHeight < gridWidth) {
+    tdsize = Math.floor(ws / gridHeight)
+  } else { 
+           tdsize=Math.floor(ws / gridWidth)
+         }
   for (let i = 0; i < gridHeight; i++) {
-    t += "<tr class='gridtr' style='height:" + Math.floor(tdsize) + "px;'>";
+    t += "<tr class='gridtr' style='height:" + tdsize + "px;'>";
     for (let j = 0; j < gridWidth; j++) {
-      t += "<td class='pxcol gridtd' style='width:" + Math.floor(tdsize) + "px;'></td>";
+      t += "<td class='pxcol gridtd' style='width:" + tdsize + "px;'></td>";
     };
     t += "</tr>";
   }
