@@ -74,27 +74,23 @@ $(this).on("blur focus focusin focusout load resize scroll unload click " +
 
 // if the button is pressed
 $("#submit_size").on("click", function (event){
-  let isDrawing, rightMouseButton;
+  let isDrawing;
   event.preventDefault();
   makeGrid();
 
   $("#pixel_canvas td").mousedown(function(e) {
     isDrawing = true;
     if (e.button == 2) {
-      rightMouseButton = true;
-      $(this).css("background-color", "rgb(209, 209, 209)");
+           $(this).css("background-color", "rgb(209, 209, 209)");
     } else {
              $(this).css("background-color", $('#colorPicker').val());
            }
   });
     
-  $("#pixel_canvas td").mousemove(function(e) {
+  $("#pixel_canvas td").mouseover(function(e) {
     $(this).css("cursor", "pointer");
       if (isDrawing) {
-        if (rightMouseButton) {
-          $("#pixel_canvas td").contextmenu(function() {
-            return false;
-          });
+        if (e.button == 2) {
           $(this).css("background-color", "rgb(209, 209, 209)");
         } else {
                  $(this).css("background-color", $('#colorPicker').val());
@@ -103,12 +99,15 @@ $("#submit_size").on("click", function (event){
   });
     
   $("#pixel_canvas td").mouseup(function() {
-    if (rightMouseButton) {
-      rightMouseButton = false;
-    }
+    isDrawing = false;
+  });
+
+  $("#pixel_canvas tbody").mouseleave(function() {
     isDrawing = false;
   });
 })
+
+$("#pixel_canvas").ondragstart = function() { return false; };
 
 //drawing the grid
 function makeGrid() {
