@@ -116,11 +116,7 @@ function makeGrid() {
   let gridHeight = $("#input_height").val();
   let gridWidth = $("#input_width").val();
   let t="<tbody>";
-  let widthScreen = $("body").innerWidth();
-  console.log(widthScreen);
-  if (widthScreen > 450) {
-  let ws=widthScreen
-    } else {let ws=450}
+  let ws = $("body").innerWidth() < 450 ? $("body").innerWidth() : 450;
   let tdsize = gridHeight > gridWidth ? ws / gridWidth : ws / gridHeight;
   for (let i = 0; i < gridHeight; i++) {
     t += "<tr class='gridtr' style='height:" + Math.floor(tdsize) + "px;'>";
