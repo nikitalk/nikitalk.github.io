@@ -1,62 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>Pixel Art Maker!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+    <script src="jquery-3.2.1.min.js"></script>
 </head>
 <body>
-
-
-    <div class="wrapper">
-        <div class="box box1"><h1>Lab: Pixel Art Maker</h1>
-        
-            
-
-         
-            
-               
+    <div class="container">
+        <div class="header">
+            Lab: Pixel Art Maker
         </div>
-       
-        <div class="box box2">
-            <h2>Choose Grid Size</h2>
+        <div class="menu">
+            <h3>Choose Grid Size</h3>
             <form id="sizePicker">
-                          
-
                 <div class="group">      
-                    <span id="errmsg"></span>
-                    <input type="text" id="input_height"   name="height"  required>
+                    <span id="error_height" class="error"></span>
+                    <input class="input" type="text" id="input_height" name="height"  required>
                     <span class="bar"></span>
-                    
                     <label>Grid Height</label>
                 </div>
-                
-                  <div class="group">      
-                    <span id="errmsg2"></span>
-                    <input type="text" id="input_width"   name="width" required>
+                <div class="group">      
+                    <span id="error_width" class="error"></span>
+                    <input class="input" type="text" id="input_width" name="width" required>
                     <span class="bar"></span>
                     <label>Grid Width</label>
-                    
-                  </div>
-
-                  <button id="submit_size" class="myButton">Create Grid</button> 
+                </div>
+                <button id="submit_size" class="myButton" disabled>Create Grid</button> 
             </form>
-
-                
-            <h2>Pick A Color</h2>
-            <input type="color" id="colorPicker">
- 
-            <h2>Design Canvas</h2>
-            <table id="pixel_canvas"></table>
-        
+            <h3>Pick A Color</h3>
+            <div class="input-color-container">
+            <input type="color" id="colorPicker" list="colorList" value="#2d3161">
+            </div>
+        </div>
+        <div class="content">
+            <h3>Design Canvas</h3>
+            <table id="pixel_canvas" class="gridtable"><tbody></tbody></table>
             <script src="designs.js"></script>
         </div>
-      
-      </div>
-
-
-  
+        <div class="footer">Made by Nikita L. Karavaev</div>
+    </div>
 </body>
 </html>
