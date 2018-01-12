@@ -95,7 +95,7 @@ $("#submit_size").on("click", function (event){
           $("#pixel_canvas td").contextmenu(function() {
             return false;
           });
-          $(this).css("background-color", "#FFFFFF");
+          $(this).css("background-color", "rgb(209, 209, 209)");
         } else {
                  $(this).css("background-color", $('#colorPicker').val());
                }
