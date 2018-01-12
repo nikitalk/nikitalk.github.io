@@ -120,7 +120,7 @@ function makeGrid() {
   console.log(widthScreen);
   if (widthScreen < 450) {
   let ws=widthScreen
-    } else {ws=450}
+    } else {let ws=450}
   let tdsize = gridHeight > gridWidth ? ws / gridWidth : ws / gridHeight;
   for (let i = 0; i < gridHeight; i++) {
     t += "<tr class='gridtr' style='height:" + Math.floor(tdsize) + "px;'>";
