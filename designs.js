@@ -82,7 +82,7 @@ $("#submit_size").on("click", function (event){
     isDrawing = true;
     if (e.button == 2) {
       rightMouseButton = true;
-      $(this).css("background-color", "#FFFFFF");
+      $(this).css("background-color", "rgb(209, 209, 209)");
     } else {
              $(this).css("background-color", $('#colorPicker').val());
            }
