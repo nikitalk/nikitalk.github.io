@@ -100,7 +100,7 @@ $("#submit_size").on("click", function (event){
       }
   });
     
-  $("#pixel_canvas td").on("drag dragend dragenter dragexit dragleave dragover dragstart drop",function() {
+  $("#pixel_canvas td").on("drag dragend dragenter dragexit dragleave dragover dragstart drop ondragstart",function() {
     event.preventDefault();
     return false;
   });
