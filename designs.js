@@ -74,36 +74,45 @@ $(this).on("blur focus focusin focusout load resize scroll unload click " +
 
 // if the button is pressed
 $("#submit_size").on("click", function (event){
-  let isDrawing;
+  let isDrawing, isErasing;
   event.preventDefault();
   makeGrid();
 
-  $("#pixel_canvas td").mousedown(function(e) {
-    isDrawing = true;
+  $("#pixel_canvas td").on("mousedown click", function(e) {
+
     if (e.button == 2) {
            $(this).css("background-color", "rgb(209, 209, 209)");
+           isErasing = true;
+           isDrawing = false;
     } else {
              $(this).css("background-color", $('#colorPicker').val());
+             isDrawing = true;
+             isErasing = false;
            }
   });
     
-  $("#pixel_canvas td").mouseover(function(e) {
+  $("#pixel_canvas td").on("mousemove mouseover mouseout mouseenter", function(e) {
     $(this).css("cursor", "pointer");
-      if (isDrawing) {
-        if (e.button == 2) {
+        if (isErasing) {
           $(this).css("background-color", "rgb(209, 209, 209)");
-        } else {
+        } else if (isDrawing) {
                  $(this).css("background-color", $('#colorPicker').val());
-               }
       }
   });
     
-  $("#pixel_canvas td").mouseup(function() {
+  $("#pixel_canvas td").on("drag dragend dragenter dragexit dragleave dragover dragstart drop",function() {
+    event.preventDefault();
+    return false;
+  });
+
+  $("#pixel_canvas td").on("mouseup",function() {
     isDrawing = false;
+    isErasing = false;
   });
 
   $("#pixel_canvas tbody").mouseleave(function() {
     isDrawing = false;
+    isErasing = false;
   });
 })
 
@@ -139,5 +148,6 @@ function makeGrid() {
 $("#pixel_canvas").contextmenu(function() {
     return false;
 });
+
 
 }); 
