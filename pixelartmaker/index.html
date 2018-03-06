@@ -1,1 +1,59 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Lab: Pixel Art Maker
+        </div>
+        <div class="menu">
+            <h3>Choose Grid Size</h3>
+            <form id="sizePicker">
+                <div class="group">      
+                    <span id="error_height" class="error"></span>
+                    <input class="input" type="text" id="input_height" name="height"  required inputmode="numeric">
+                    <span class="bar"></span>
+                    <label>Grid Height (not more than 29)</label>
+                </div>
+                <div class="group">      
+                    <span id="error_width" class="error"></span>
+                    <input class="input" type="text" id="input_width" name="width" required inputmode="numeric">
+                    <span class="bar"></span>
+                    <label>Grid Width (not more than 29)</label>
+                </div>
+                <button id="submit_size" class="myButton" disabled>Create Grid</button> 
+            </form>
+            <h3>Pick A Color</h3>
+            <div class="input-color-container">
+            <input type="color" id="colorPicker" list="colorList" value="#2d3161">
+            <datalist id="colorList">
+                <option>#ff0000</option>
+                <option>#0000ff</option>
+                <option>#00ff00</option>
+                <option>#ffff00</option>
+                <option>#00ffff</option>
+                <option>#000000</option>
+                <option>#ffffff</option>
+                <option>#478912</option>
+                <option>#5AC6D9</option>
+                <option>#573905</option>
+            </datalist>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Design Canvas</h3>
+            <p>Left Mouse Button - Drawing; Right Mouse Button - Erasing</p>
+            <table id="pixel_canvas" class="gridtable"><tbody></tbody></table>
+            <script src="designs.js"></script>
+        </div>
+        <div class="footer">Developed by <a href="https://github.com/nikitalk">Nikita L. Karavaev</a></div>
+    </div>
+</body>
+</html>
