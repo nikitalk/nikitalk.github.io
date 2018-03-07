@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="71.2mm" height="71.2mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 6392 6392"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:white;stroke-width:89.7804}
+    .fil3 {fill:none}
+    .fil2 {fill:#01AFB0}
+    .fil1 {fill:#0482B4}
+    .fil0 {fill:#22449E}
+   ]]>
+  </style>
+      <clipPath id="id0">
+       <path d="M54 54l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id1">
+       <path d="M952 54l897 0 0 898 -897 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id2">
+       <path d="M1849 54l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id3">
+       <path d="M2747 54l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id4">
+       <path d="M3645 54l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id5">
+       <path d="M4543 54l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id6">
+       <path d="M5441 54l897 0 0 898 -897 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id7">
+       <path d="M54 952l898 0 0 897 -898 0 0 -897z"/>
+      </clipPath>
+      <clipPath id="id8">
+       <path d="M952 952l897 0 0 897 -897 0 0 -897z"/>
+      </clipPath>
+      <clipPath id="id9">
+       <path d="M1849 952l898 0 0 897 -898 0 0 -897z"/>
+      </clipPath>
+      <clipPath id="id10">
+       <path d="M2747 952l898 0 0 897 -898 0 0 -897z"/>
+      </clipPath>
+      <clipPath id="id11">
+       <path d="M3645 952l898 0 0 897 -898 0 0 -897z"/>
+      </clipPath>
+      <clipPath id="id12">
+       <path d="M4543 952l898 0 0 897 -898 0 0 -897z"/>
+      </clipPath>
+      <clipPath id="id13">
+       <path d="M5441 952l897 0 0 897 -897 0 0 -897z"/>
+      </clipPath>
+      <clipPath id="id14">
+       <path d="M54 1849l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id15">
+       <path d="M952 1849l897 0 0 898 -897 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id16">
+       <path d="M1849 1849l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id17">
+       <path d="M2747 1849l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id18">
+       <path d="M3645 1849l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id19">
+       <path d="M4543 1849l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id20">
+       <path d="M5441 1849l897 0 0 898 -897 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id21">
+       <path d="M54 2747l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id22">
+       <path d="M952 2747l897 0 0 898 -897 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id23">
+       <path d="M1849 2747l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id24">
+       <path d="M2747 2747l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id25">
+       <path d="M3645 2747l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id26">
+       <path d="M4543 2747l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id27">
+       <path d="M5441 2747l897 0 0 898 -897 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id28">
+       <path d="M54 3645l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id29">
+       <path d="M952 3645l897 0 0 898 -897 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id30">
+       <path d="M1849 3645l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id31">
+       <path d="M2747 3645l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id32">
+       <path d="M3645 3645l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id33">
+       <path d="M4543 3645l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id34">
+       <path d="M5441 3645l897 0 0 898 -897 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id35">
+       <path d="M54 4543l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id36">
+       <path d="M952 4543l897 0 0 898 -897 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id37">
+       <path d="M1849 4543l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id38">
+       <path d="M2747 4543l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id39">
+       <path d="M3645 4543l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id40">
+       <path d="M4543 4543l898 0 0 898 -898 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id41">
+       <path d="M5441 4543l897 0 0 898 -897 0 0 -898z"/>
+      </clipPath>
+      <clipPath id="id42">
+       <path d="M54 5441l898 0 0 897 -898 0 0 -897z"/>
+      </clipPath>
+      <clipPath id="id43">
+       <path d="M952 5441l897 0 0 897 -897 0 0 -897z"/>
+      </clipPath>
+      <clipPath id="id44">
+       <path d="M1849 5441l898 0 0 897 -898 0 0 -897z"/>
+      </clipPath>
+      <clipPath id="id45">
+       <path d="M2747 5441l898 0 0 897 -898 0 0 -897z"/>
+      </clipPath>
+      <clipPath id="id46">
+       <path d="M3645 5441l898 0 0 897 -898 0 0 -897z"/>
+      </clipPath>
+      <clipPath id="id47">
+       <path d="M4543 5441l898 0 0 897 -898 0 0 -897z"/>
+      </clipPath>
+      <clipPath id="id48">
+       <path d="M5441 5441l897 0 0 897 -897 0 0 -897z"/>
+      </clipPath>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0 str0" points="952,5441 952,952 1849,952 1849,5441 "/>
+  <polygon class="fil1 str0" points="3638,4983 952,1849 54,1849 54,6338 952,6338 943,3187 3645,6338 4543,6338 4543,1849 3645,1849 "/>
+  <polygon class="fil0 str0" points="1849,5441 1849,4543 3645,4543 3645,5441 "/>
+  <polygon class="fil2 str0" points="2747,1849 5441,54 6338,54 6338,503 4309,1849 3645,1849 3645,2298 6338,4094 6338,4543 5441,4543 2747,2747 "/>
+  <polygon class="fil2 str0" points="1849,4543 1849,54 2747,54 2747,4543 "/>
+  <polygon class="fil0 str0" points="4543,4543 5441,4543 5441,5441 4543,5441 "/>
+  <g id="_466970472">
+   <g>
+    <g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id0)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id1)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id2)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id3)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id4)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id5)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id6)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id7)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id8)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id9)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id10)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id11)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id12)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id13)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id14)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id15)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id16)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id17)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id18)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id19)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id20)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id21)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id22)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id23)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id24)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id25)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id26)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id27)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id28)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id29)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id30)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id31)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id32)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id33)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id34)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id35)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id36)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id37)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id38)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id39)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id40)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id41)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id42)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id43)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id44)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id45)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id46)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id47)">
+     </g>
+    </g>
+    <g>
+     <g>
+     </g>
+     <g style="clip-path:url(#id48)">
+     </g>
+    </g>
+    <polyline class="fil3 str0" points="54,6383 54,6338 54,5441 54,4543 54,3645 54,2747 54,1849 54,952 54,54 54,9 "/>
+    <polyline id="1" class="fil3 str0" points="952,6383 952,6338 952,5441 952,4543 952,3645 952,2747 952,1849 952,952 952,54 952,9 "/>
+    <polyline id="2" class="fil3 str0" points="1849,6383 1849,6338 1849,5441 1849,4543 1849,3645 1849,2747 1849,1849 1849,952 1849,54 1849,9 "/>
+    <polyline id="3" class="fil3 str0" points="2747,6383 2747,6338 2747,5441 2747,4543 2747,3645 2747,2747 2747,1849 2747,952 2747,54 2747,9 "/>
+    <polyline id="4" class="fil3 str0" points="3645,6383 3645,6338 3645,5441 3645,4543 3645,3645 3645,2747 3645,1849 3645,952 3645,54 3645,9 "/>
+    <polyline id="5" class="fil3 str0" points="4543,6383 4543,6338 4543,5441 4543,4543 4543,3645 4543,2747 4543,1849 4543,952 4543,54 4543,9 "/>
+    <polyline id="6" class="fil3 str0" points="5441,6383 5441,6338 5441,5441 5441,4543 5441,3645 5441,2747 5441,1849 5441,952 5441,54 5441,9 "/>
+    <polyline id="7" class="fil3 str0" points="6338,6383 6338,6338 6338,5441 6338,4543 6338,3645 6338,2747 6338,1849 6338,952 6338,54 6338,9 "/>
+    <polyline id="8" class="fil3 str0" points="9,6338 54,6338 952,6338 1849,6338 2747,6338 3645,6338 4543,6338 5441,6338 6338,6338 6383,6338 "/>
+    <polyline id="9" class="fil3 str0" points="9,5441 54,5441 952,5441 1849,5441 2747,5441 3645,5441 4543,5441 5441,5441 6338,5441 6383,5441 "/>
+    <polyline id="10" class="fil3 str0" points="9,4543 54,4543 952,4543 1849,4543 2747,4543 3645,4543 4543,4543 5441,4543 6338,4543 6383,4543 "/>
+    <polyline id="11" class="fil3 str0" points="9,3645 54,3645 952,3645 1849,3645 2747,3645 3645,3645 4543,3645 5441,3645 6338,3645 6383,3645 "/>
+    <polyline id="12" class="fil3 str0" points="9,2747 54,2747 952,2747 1849,2747 2747,2747 3645,2747 4543,2747 5441,2747 6338,2747 6383,2747 "/>
+    <polyline id="13" class="fil3 str0" points="9,1849 54,1849 952,1849 1849,1849 2747,1849 3645,1849 4543,1849 5441,1849 6338,1849 6383,1849 "/>
+    <polyline id="14" class="fil3 str0" points="9,952 54,952 952,952 1849,952 2747,952 3645,952 4543,952 5441,952 6338,952 6383,952 "/>
+    <polyline id="15" class="fil3 str0" points="9,54 54,54 952,54 1849,54 2747,54 3645,54 4543,54 5441,54 6338,54 6383,54 "/>
+   </g>
+  </g>
+ </g>
+</svg>
