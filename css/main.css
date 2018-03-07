@@ -12,8 +12,8 @@
     font-family: "source-sans-pro", sans-serif;
     color: white;
     text-align: right;
-    -webkit-transform: translate(1000px, 0);
-    transform: translate(1000px, 0);    
+    /* -webkit-transform: translate(1000px, 0);
+    transform: translate(1000px, 0);   */  
   }
 
 .polygon__header__left {
@@ -30,8 +30,8 @@
     font-family: "source-sans-pro", sans-serif;
     color: white;
     text-align: left;
-    -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0);
+   /*  -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0); */
   }
 
   .header {
@@ -47,7 +47,7 @@
     margin: 0;
   }
 
- .anima1 {
+ /* .anima1 {
     animation: polygons 0.5s forwards;
   }
 
@@ -60,7 +60,7 @@
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
     }
-  }
+  } */
 
 
   /* .anim {
