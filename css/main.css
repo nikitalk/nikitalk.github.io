@@ -30,7 +30,7 @@
     font-family: "source-sans-pro", sans-serif;
     color: white;
     text-align: left;
-    border-bottom: 10px red;
+    
    /*  -webkit-transform: translate(-300px, 0);
     transform: translate(-300px, 0); */
   }
@@ -39,7 +39,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    border-bottom: 10px red;
+ 
     overflow-x: hidden;
     overflow-y: auto;
   }
@@ -48,6 +48,16 @@
     margin: 0;
   }
 
+
+  .mybio {
+    width: 200px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    left: 100px;
+    top:200px;
+    border-bottom: 10px solid yellow;
+  }
  /* .anima1 {
     animation: polygons 0.5s forwards;
   }
