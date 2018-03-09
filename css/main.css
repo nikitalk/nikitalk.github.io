@@ -1,8 +1,5 @@
 .header {
- /*  width: 100%;
-  margin: 0;
-  padding: 0;
-  margin: 0 auto; */
+
 }
 
 #wrapper {
@@ -18,13 +15,46 @@
   display: block;
   top: 0%;
   left: 0%;
-  border: 1px solid;
+
+    -moz-box-sizing: border-box; /* Для Firefox */  
+      box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+#show-about-me {
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    width:25px;
+    height:25px;
+cursor: pointer;
+    display: block;
+}
+
+#show-about-me span {
+ position: absolute;
+
+ 
+    width: 100%;
+    height: 4px;
+    background-color: black;
+ 
+}
+
+#show-about-me span#bar-1 {
+    top: 0;
+}
+#show-about-me span#bar-2 {
+    top: 7px;
+}
+#show-about-me span#bar-3 {
+    top: 14px;
 }
 
 .header__left {
   position: absolute;
-  width: 100%;
-  height: 100%;
+ 
   top: 50%;
   left: 50%;
     width: 100px;
@@ -73,26 +103,35 @@
   
   }
 
-
+.aboutme {
+  
+}
   .mybio {
     position: absolute;
-    width: 100%;
-    height: 100%;
+   
     top: 50%;
     left: 50%;
-      width: 300px;
-      height: 300px;
+      width: 400px;
+      height: 200px;
        margin: -198px 0 0 -252px;  
       background: lightblue;
-      display: block;
+      opacity:100%; 
+      
+      
       font-size: 12px;
       font-family: "source-sans-pro", sans-serif;
       color: white;
       text-align: left;
       -moz-box-sizing: border-box; /* Для Firefox */  
       box-sizing: border-box;
-     /*  -webkit-transform: translate(-300px, 0);
-      transform: translate(-300px, 0); */
+       -webkit-transform: translate(-1000px, 0);
+      transform: translate(-1000px, 0); 
+  }
+
+  .mybio.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+        transition: all 800ms cubic-bezier(0.645,.045,.355,1);
   }
 
   .myphoto {
@@ -103,7 +142,7 @@
     left: 50%;
       width: 200px;
       height: 200px;
-       margin: -198px 0 0 50px;  
+       margin: -198px 0 0 150px;  
       background: red;
       display: block;
       font-size: 12px;
@@ -112,15 +151,51 @@
       text-align: left;
       -moz-box-sizing: border-box; /* Для Firefox */  
       box-sizing: border-box;
+        -webkit-transform: translate(1000px, 0);
+      transform: translate(1000px, 0); 
      /*  -webkit-transform: translate(-300px, 0);
       transform: translate(-300px, 0); */
+      overflow: hidden;
+  }
+  
+.myphoto.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+        transition: all 800ms cubic-bezier(0.645,.045,.355,1);
   }
 
+
   .mysites {
-  
+  /*  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+    width: 200px;
+    height: 200px;
+     margin: 4px 0 0 50px;  
+    background: green;
+    display: block;
+    font-size: 12px;
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+    text-align: left;
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box; */
+   /*  -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0); */
    
    
   }
+
+    a .mysites:hover {
+    cursor: pointer;
+  
+      background-image: url(../img/bg-menu.jpg);
+          transform: rotateZ(-45deg) translateY(27px);
+    transition: all 800ms cubic-bezier(0.645,.045,.355,1);
+  }
+
 
 
 

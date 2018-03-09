@@ -20,47 +20,54 @@
         <br> Portfolio2
       </p>
     </div>
+    <a id="show-about-me">
+      <span id="bar-1"></span>
+      <span id="bar-2"></span>
+      <span id="bar-3"></span>
+    </a>
   </header>
 
-  <nav class="nav">
 
+  <section class="aboutme">
+<div class="mybio">
+  <soab>vfvfvf </soab>
+</div>
+
+
+
+<div class="myphoto">
+
+</div>
+  </section>
+
+  <nav class="nav">
+<a>
+  <div class="mysites">
+
+  </div>
+</a>
+<div class="mylogos">
+
+</div>
+
+<div class="mycards">
+
+</div>
+<div class="myart">
+
+</div>
+
+<div class="myscience">
+
+</div>
   </nav>
 
-  <main>
-    <section class="aboutme">
-      <a>
-      <div class="mybio">
-<p>
-        bgbgbg
-</p>
-      </div>
-    </a>
-    <a>
-      <div class="myphoto">
+  <main class="myportfolio">
 
-      </div>
-    </a>
-    </section>
-    <section class="myportfolio">
-      <div class="mysites">
-
-      </div>
-
-      <div class="mylogos">
-
-      </div>
-
-      <div class="mycards">
-
-      </div>
-      <div class="myart">
-
-      </div>
-
-      <div class="myscience">
-
-      </div>
-    </section>
+     
+      
+  
+    
 
   </main>
 
@@ -76,6 +83,23 @@
 
   </footer>
   </div>
+
+
+  <script>
+    /*
+     * Open the drawer when the menu ison is clicked.
+     */
+    var menu = document.querySelector('#show-about-me');
+      var drawer = document.querySelector('.mybio');
+       var drawer2 = document.querySelector('.myphoto');
+
+    menu.addEventListener('click', function (e) {
+      drawer.classList.toggle('open');
+      drawer2.classList.toggle('open');
+      e.stopPropagation();
+    });
+    
+  </script>
 </body>
 
 </html>
