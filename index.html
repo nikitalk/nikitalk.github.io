@@ -41,6 +41,13 @@
   </section>
 
   <nav class="nav">
+
+    <a id="show-menu">
+      <span id="bar-1"></span>
+      <span id="bar-2"></span>
+      <span id="bar-3"></span>
+    </a>
+
 <a>
   <div class="mysites">
 
@@ -92,12 +99,25 @@
     var menu = document.querySelector('#show-about-me');
       var drawer = document.querySelector('.mybio');
        var drawer2 = document.querySelector('.myphoto');
+       var drawer3 = document.querySelector('.header');
+       var drawer4 = document.querySelector('.mysites');
+  var menu2 = document.querySelector('#show-menu');
 
     menu.addEventListener('click', function (e) {
       drawer.classList.toggle('open');
       drawer2.classList.toggle('open');
+      drawer3.classList.toggle('open');
+      menu2.classList.toggle('open');
       e.stopPropagation();
     });
+
+    
+
+        menu2.addEventListener('click', function (e) {
+         drawer4.classList.toggle('open');
+         
+          e.stopPropagation();
+        });
     
   </script>
 </body>
