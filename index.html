@@ -10,8 +10,10 @@
 </head>
 
 <body>
-  <div id="wrapper">
-  <header class="header">
+
+  <div class="wrapper"> 
+  <!--   <div class="grid"> -->
+  <header class="gridheader">
     <div class="header__left anima1">
       <img src="img/logo.svg" width=60 height=60>
     </div>
@@ -19,18 +21,27 @@
       <p>Nikita L. Karavaev
         <br> Portfolio2
       </p>
+      <a id="show-about-me">
+        <span id="bar-1"></span>
+        <span id="bar-2"></span>
+        <span id="bar-3"></span>
+        vfvfvf
+      </a>
     </div>
-    <a id="show-about-me">
-      <span id="bar-1"></span>
-      <span id="bar-2"></span>
-      <span id="bar-3"></span>
-    </a>
+     <!--  <a id="show-about-me"> -->
+      <!--  </a> -->
   </header>
 
 
   <section class="aboutme">
 <div class="mybio">
-  <soab>vfvfvf </soab>
+ 
+  <a id="show-menu">
+    <span id="bar-1"></span>
+    <span id="bar-2"></span>
+    <span id="bar-3"></span>
+     vfvfvf22
+  </a>
 </div>
 
 
@@ -38,22 +49,23 @@
 <div class="myphoto">
 
 </div>
+
   </section>
 
+
+ 
   <nav class="nav">
 
-    <a id="show-menu">
-      <span id="bar-1"></span>
-      <span id="bar-2"></span>
-      <span id="bar-3"></span>
-    </a>
+    
 
-<a>
+
   <div class="mysites">
 
   </div>
-</a>
-<div class="mylogos">
+
+
+<!--
+  <div class="mylogos">
 
 </div>
 
@@ -88,9 +100,10 @@
     </div>
 
 
-  </footer>
-  </div>
-
+  </footer> -->
+<!--   </div> -->
+  </div> 
+ 
 
   <script>
     /*
@@ -99,15 +112,18 @@
     var menu = document.querySelector('#show-about-me');
       var drawer = document.querySelector('.mybio');
        var drawer2 = document.querySelector('.myphoto');
-       var drawer3 = document.querySelector('.header');
+       var drawer3 = document.querySelector('.gridheader');
        var drawer4 = document.querySelector('.mysites');
   var menu2 = document.querySelector('#show-menu');
-
+  var drawer5 = document.querySelector('.aboutme');
+ 
     menu.addEventListener('click', function (e) {
       drawer.classList.toggle('open');
       drawer2.classList.toggle('open');
       drawer3.classList.toggle('open');
       menu2.classList.toggle('open');
+   
+      document.getElementById("show-about-me").remove();
       e.stopPropagation();
     });
 
@@ -115,7 +131,8 @@
 
         menu2.addEventListener('click', function (e) {
          drawer4.classList.toggle('open');
-         
+               drawer5.classList.toggle('open');
+     
           e.stopPropagation();
         });
 
