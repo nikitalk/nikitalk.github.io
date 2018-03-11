@@ -1,0 +1,32 @@
+@media screen and (max-width:500px) {
+    .wrapper {
+        height: 500px;
+    }
+    
+    .gridheader {
+         width:100%;
+    }
+ .header__left {
+width:30%;
+height:100px;
+ }
+ .header__right {
+width:70%;
+height:100px;
+ }
+ .aboutme {
+
+ width:100%;
+}
+
+ .mybio {
+width:60%;
+height:300px;
+ }
+ .myphoto {
+width:40%;
+height:300px;
+ }
+
+
+}

@@ -14,33 +14,39 @@
     -moz-box-sizing: border-box; /* Для Firefox */  
       box-sizing: border-box;
   overflow: hidden;
-  display: grid; 
-       justify-content: center;
-   align-content: center; 
+  display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
 }
 
 
 .gridheader {
-   display: grid; 
- 
-  grid-gap: 0px;    
-  grid-template-columns: repeat(5, 100px);
-  grid-template-rows: 100px;
-  grid-template-areas:
-    "l p p p p"    ;
-     
-  
+  order:1;
+     width: 500px;
+     height:100px;
+  display: flex;
+        flex-wrap: wrap;
         -webkit-transform: translate(0, 200px);
-    transform: translate(0, 200px); 
+    transform: translate(0, 200px);
+ 
 }
+
+.show-about {
+  order:3;
+  height:20px;
+  border: 1px solid green;
+}
+
 
 
 
 #show-about-me {
 width:100%;
   cursor: pointer;
-   
+ 
 } 
 
 #show-about-me span {
@@ -91,7 +97,9 @@ width:100%;
 
 
 .header__left {
-grid-area: l;
+width:100px;
+height:100px;
+order:1;
  
     background: lightblue;
    
@@ -110,7 +118,9 @@ grid-area: l;
 
 
   .header__right {
-  grid-area: p;
+  width:400px;
+  height:100px;
+order:2;
       
       background: blue;
   
@@ -144,19 +154,29 @@ grid-area: l;
 
 .aboutme {
 
-   display: grid; 
- 
-  grid-gap: 0px;    
-  grid-template-columns: repeat (5, 100px);
-  grid-template-rows: 300px;
-  grid-template-areas:
-    "b b b ph ph";
-
+   display: flex; 
+     flex-wrap: wrap;
+     order:2;
+ width:500px;
+ height:300px;
 }
 
+.show-m {
+  order:3;
+  height:20px;
+  border: 1px solid green;
+  visibility: hidden;
+}
+
+.show-m.open {
+ 
+  visibility: visible;
+}
 
   .mybio {
-     grid-area: b;
+     width:300px;
+     height: 300px;
+     order:1;
          background: lightblue;
      
       
@@ -178,7 +198,9 @@ grid-area: l;
 
 
   .myphoto {
-    grid-area: ph;
+    width:200px;
+     height: 300px;
+     order:2;
       background: red;
       
       font-size: 12px;
@@ -201,25 +223,22 @@ grid-area: l;
   }
 
 .nav {
-   display: grid; 
- 
-  grid-gap: 0px;    
-  grid-template-columns: repeat (5, 100px);
-  grid-template-rows: 100px 100px;
-  grid-template-areas:
-    "s s s s s"
-    "s s s s s";
+   display: flex;
+   order:3; 
+
+        flex-wrap: wrap;
+
 }
 
   .mysites {
-    grid-area: s;
-    
- 
-  
+   
+      order:1;
+ width:500px;
+  height:100px;
   
   
     background: green;
-    display: block;
+    
     font-size: 12px;
     font-family: "source-sans-pro", sans-serif;
     color: white;
@@ -229,7 +248,7 @@ grid-area: l;
    /*  -webkit-transform: translate(-300px, 0);
     transform: translate(-300px, 0); */
       -webkit-transform: translate(-1000px, 0);
-      transform: translate(-1000px, 0); 
+      transform: translate(-1000px, 0);  
    
   }
 
