@@ -25,8 +25,9 @@
 
 .gridheader {
   order:1;
-     width: 500px;
+     width: 400px;
      height:100px;
+ 
   display: flex;
         flex-wrap: wrap;
         -webkit-transform: translate(0, 200px);
@@ -35,73 +36,17 @@
 
 }
 
-.show-about {
+
+#show-about-me {
+width:20px;
+height:18px;
+cursor: pointer; 
   order:3;
   height:20px;
 margin-top:5px;
 width:24px;
 
-}
-
-
-
-
-#show-about-me {
-width:10px;
- height:18px;
-cursor: pointer;
-
- 
 } 
-
-#show-about-me span {
-  position: absolute;  
-  height: 4px;
-     width:24px;
-  
-    background-color: black
-  }
-
-#show-about-me span#bar-1 {
-    top: 0;
-}
-#show-about-me span#bar-2 {
-    top: 7px;
-}
-#show-about-me span#bar-3 {
-    top: 14px;
-}
-
-
-
-#show-menu {
-width:100px;
-  cursor: pointer;
-  
-} 
-
-
-#show-menu span {
-
-position: absolute;  
-  height: 4px;
-     width:24px;
- 
- 
-    background-color: black;
- 
-}
-
-#show-menu span#bar-1 {
-    top: 0;
-}
-#show-menu span#bar-2 {
-    top: 7px;
-}
-#show-menu span#bar-3 {
-    top: 14px;
-}
-
 
 
 .header__left {
@@ -126,10 +71,10 @@ order:1;
 
 
   .header__right {
-  width:400px;
+  width:300px;
   height:100px;
 order:2;
-      
+
       background: blue;
   
       font-size: 12px;
@@ -147,7 +92,7 @@ order:2;
   
 
  .gridheader.open {
-   margin-left:-100px;
+   margin-left:-200px;
   
   -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
@@ -166,22 +111,26 @@ order:2;
      flex-wrap: wrap;
      order:2;
  width:600px;
- height:300px;
+ height:200px;
  margin-left:0px;
   justify-content: center;
 }
 
-.show-m {
-  order:3;
+
+#show-menu {
+width:20px;
+height:18px;
+  cursor: pointer;
+    order:4;
   height:20px;
 
-  margin-top:5px;
+  margin-top:55px;
   width:24px;
 opacity:0;
- 
-}
+} 
 
-.show-m.open {
+
+#show-menu.open {
  
 
  animation: topFadeOut 3.5s forwards, polygons2 1.5s infinite; 
@@ -223,7 +172,7 @@ opacity:0;
 
   .mybio {
      width:300px;
-     height: 300px;
+     height: 200px;
      order:1;
          background: lightblue;
      
@@ -238,7 +187,7 @@ opacity:0;
       transform: translate(-1000px, 0); 
   }
 
-  .mybio.open {
+  .mybio.open, .myphoto.open, .social.open, .mysites.open, .mylogos.open, .mycards.open, .myart.open, .myscience.open, .mycv.open, .gridfooter.open {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
         transition: all 800ms cubic-bezier(0.645,.045,.355,1);
@@ -246,8 +195,8 @@ opacity:0;
 
 
   .myphoto {
-    width:300px;
-     height: 300px;
+    width:200px;
+     height: 200px;
      order:2;
       background: red;
       
@@ -257,34 +206,51 @@ opacity:0;
       text-align: left;
       -moz-box-sizing: border-box; /* Для Firefox */  
       box-sizing: border-box;
-        -webkit-transform: translate(1000px, 0);
-      transform: translate(1000px, 0); 
+        -webkit-transform: translate(0, 1000px);
+      transform: translate(0, 1000px); 
      /*  -webkit-transform: translate(-300px, 0);
       transform: translate(-300px, 0); */
   
   }
+
+  .social {
+    width:100px;
+     height: 100px;
+     order:3;
+      background: orange;
+      margin-top:100px;
+      font-size: 12px;
+      font-family: "source-sans-pro", sans-serif;
+      color: white;
+      text-align: left;
+      -moz-box-sizing: border-box; /* Для Firefox */  
+      box-sizing: border-box;
+    /*     -webkit-transform: translate(1000px, 0);
+      transform: translate(1000px, 0);  */
+       -webkit-transform: translate(1000px, 0);
+      transform: translate(1000px, 0); 
   
-.myphoto.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-        transition: all 800ms cubic-bezier(0.645,.045,.355,1);
   }
+  
 
 .nav {
    display: flex;
    order:3; 
-
+   width:600px;
+   height:100px;
+flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-end;
+      
 
 }
 
   .mysites {
    
       order:1;
- width:500px;
-  height:100px;
-  margin-left:100px;
+ width:200px;
+  height:100%;
+  
   
     background: green;
     
@@ -294,19 +260,13 @@ opacity:0;
     text-align: left;
     -moz-box-sizing: border-box; /* Для Firefox */  
     box-sizing: border-box;
-   /*  -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0); */
+  
       -webkit-transform: translate(-2000px, 0);
       transform: translate(-2000px, 0);  
    
   }
 
-  .mysites.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-        transition: all 800ms cubic-bezier(0.645,.045,.355,1);
-  }
-  
+   
   
   /* .mysites:hover {
     cursor: pointer;
@@ -323,6 +283,199 @@ opacity:0;
     transition: all 800ms cubic-bezier(0.645,.045,.355,1);
   }
 
+
+
+ .mylogos {
+   
+      order:2;
+ width:200px;
+  height:100%;
+  
+  
+    background: yellow;
+    
+    font-size: 12px;
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+    text-align: left;
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box;
+  
+       -webkit-transform: translate(0, 1000px);
+      transform: translate(0, 1000px);  
+   
+  }
+
+
+
+  .mycards {
+   
+      order:3;
+ width:200px;
+  height:100%;
+ 
+  
+    background: lightgreen;
+    
+    font-size: 12px;
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+    text-align: left;
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box;
+   /*  -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0); */
+       -webkit-transform: translate(2000px, 0);
+      transform: translate(2000px, 0);  
+   
+  }
+
+
+    .myart {
+   
+      order:7;
+ width: 200px;
+  height:100px;
+ 
+  
+    background: rgb(177, 29, 157);
+    
+    font-size: 12px;
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+    text-align: left;
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box;
+   /*  -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0); */
+       -webkit-transform: translate(2000px, 0);
+      transform: translate(2000px, 0);   
+   
+  }
+ 
+
+     .myscience {
+   
+      order:6;
+ width:200px;
+  height:100px;
+ 
+  
+    background: rgb(174, 190, 21);
+    
+    font-size: 12px;
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+    text-align: left;
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box;
+   /*  -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0); */
+    -webkit-transform: translate(0, 1000px);
+      transform: translate(0, 1000px);   
+   
+  }
+
+
+      .mysocial {
+   
+      order:4;
+ width:100px;
+  height:100px;
+ 
+ 
+    background: rgb(187, 74, 9);
+    
+    font-size: 12px;
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+    text-align: left;
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box;
+   /*  -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0); */
+        -webkit-transform: translate(2000px, 0);
+      transform: translate(2000px, 0);  
+   
+  }
+
+       .mycv {
+   
+      order:5;
+ width:100px;
+  height:100px;
+ 
+  /* display: none; */
+    background: rgb(9, 187, 104);
+    
+    font-size: 12px;
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+    text-align: left;
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box;
+   /*  -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0); */
+    -webkit-transform: translate(-1000px, 0);
+      transform: translate(-1000px, 0);  
+   
+  }
+
+
+  .gridfooter {
+  order:4;
+     width: 400px;
+     height:100px;
+ 
+  display: flex;
+        flex-wrap: wrap;
+        margin-left:200px;
+        margin-top:100px;
+         -webkit-transform: translate(0, 1000px);
+    transform: translate(0, 1000px);
+    justify-content: center;
+
+}
+
+
+.copyright {
+width:100px;
+height:100px;
+order:2;
+ 
+    background: lightblue;
+   
+    font-size: 12px;
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+    text-align: left;
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box;
+    
+
+   /*  -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0); */
+  
+  }
+
+
+  .mycontacts {
+  width:300px;
+  height:100px;
+order:1;
+
+      background: blue;
+  
+      font-size: 12px;
+      font-family: "source-sans-pro", sans-serif;
+      color: white;
+      text-align: left;
+      -moz-box-sizing: border-box; /* Для Firefox */  
+      box-sizing: border-box;
+     /*  -webkit-transform: translate(-300px, 0);
+      transform: translate(-300px, 0); */
+     
+  }
 
 .anima3 {
     
