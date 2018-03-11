@@ -15,6 +15,7 @@
   <div class="wrapper"> 
   <!--   <div class="grid"> -->
   <header class="gridheader">
+
     <div class="header__left anima1">
       <img src="img/logo.svg" width=60 height=60>
     </div>
@@ -23,6 +24,7 @@
         <br> Portfolio2
       </p>
       </div>
+
       <div id="show-about-me" class="anima3">
     
         
@@ -101,19 +103,18 @@
   
     
 
-  </main>
+  </main>-->
 
-  <footer>
+  <footer class="gridfooter">
     <div class="copyright">
     </div>
 
     <div class="mycontacts">
-      <p>vk</p>
-      <p>fb</p>
+      
     </div>
 
 
-  </footer> -->
+  </footer> 
 <!--   </div> -->
   </div> 
  
@@ -133,7 +134,11 @@
  var drawer7 = document.querySelector('.mylogos');
   var drawer8 = document.querySelector('.mycards');
   var drawer9 = document.querySelector('.social');
-
+  var drawer10 = document.querySelector('.myart');
+  var drawer11 = document.querySelector('.myscience');
+   var drawer12 = document.querySelector('.mycv');
+  var drawer13 = document.querySelector('.gridfooter');
+  var drawer14 = document.querySelector('.mysocial');
     menu.addEventListener('click', function (e) {
       drawer.classList.toggle('open');
       drawer2.classList.toggle('open');
@@ -141,7 +146,7 @@
       menu2.classList.toggle('open');
    drawer9.classList.toggle('open');
      
-      
+    
       document.getElementById("show-about-me").remove();
       document.getElementById("show-el").remove();
       e.stopPropagation();
@@ -153,6 +158,11 @@
          drawer4.classList.toggle('open');
          drawer7.classList.toggle('open');
           drawer8.classList.toggle('open');
+            drawer10.classList.toggle('open'); 
+            drawer11.classList.toggle('open');
+             drawer12.classList.toggle('open');
+              drawer13.classList.toggle('open');
+              drawer14.classList.toggle('open');
            /*     drawer5.classList.toggle('open'); */
      document.getElementById("show-menu").remove();
      document.getElementById("show-el2").remove();
