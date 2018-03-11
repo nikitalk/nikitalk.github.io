@@ -16,8 +16,8 @@
   overflow: hidden;
   display: flex;
         flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
+     
+        align-items: center; 
         flex-direction: column;
 
 }
@@ -31,7 +31,7 @@
         flex-wrap: wrap;
         -webkit-transform: translate(0, 200px);
     transform: translate(0, 200px);
- 
+
 }
 
 .show-about {
@@ -139,7 +139,7 @@ order:2;
   
 
  .gridheader.open {
-  
+   margin-left:-100px;
   
   -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
@@ -157,8 +157,9 @@ order:2;
    display: flex; 
      flex-wrap: wrap;
      order:2;
- width:500px;
+ width:600px;
  height:300px;
+ margin-left:0px;
 }
 
 .show-m {
@@ -198,7 +199,7 @@ order:2;
 
 
   .myphoto {
-    width:200px;
+    width:300px;
      height: 300px;
      order:2;
       background: red;

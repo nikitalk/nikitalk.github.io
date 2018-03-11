@@ -1,8 +1,5 @@
 @media screen and (max-width:500px) {
-    .wrapper {
-        height: 500px;
-    }
-    
+
     .gridheader {
          width:100%;
     }
@@ -15,7 +12,7 @@ width:70%;
 height:100px;
  }
  .aboutme {
-
+margin-left:0;
  width:100%;
 }
 
@@ -27,6 +24,31 @@ height:300px;
 width:40%;
 height:300px;
  }
+.gridheader.open {
+   margin-left:0px;
+  
+  -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+         transition: all 800ms cubic-bezier(0.645,.045,0.355,1);  
+  }
 
 
+}
+
+
+@media screen and (max-height:700px)
+{
+    .wrapper {
+        height: 500px;
+  
+    }
+}
+
+@media screen and (min-height:700px)
+{
+    .wrapper {
+align-items: center; 
+justify-content: center;
+ 
+    }
 }
