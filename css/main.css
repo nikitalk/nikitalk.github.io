@@ -187,7 +187,7 @@ opacity:0;
       transform: translate(-1000px, 0); 
   }
 
-  .mybio.open {
+  .mybio.open, .myphoto.open, .social.open, .mysites.open, .mylogos.open, .mycards.open {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
         transition: all 800ms cubic-bezier(0.645,.045,.355,1);
@@ -232,17 +232,6 @@ opacity:0;
   
   }
   
-.myphoto.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-        transition: all 800ms cubic-bezier(0.645,.045,.355,1);
-  }
-
-  .social.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-        transition: all 800ms cubic-bezier(0.645,.045,.355,1);
-  }
 
 .nav {
    display: flex;
@@ -271,19 +260,13 @@ flex-direction: row;
     text-align: left;
     -moz-box-sizing: border-box; /* Для Firefox */  
     box-sizing: border-box;
-   /*  -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0); */
+  
       -webkit-transform: translate(-2000px, 0);
       transform: translate(-2000px, 0);  
    
   }
 
-  .mysites.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-        transition: all 800ms cubic-bezier(0.645,.045,.355,1);
-  }
-  
+   
   
   /* .mysites:hover {
     cursor: pointer;
@@ -317,18 +300,13 @@ flex-direction: row;
     text-align: left;
     -moz-box-sizing: border-box; /* Для Firefox */  
     box-sizing: border-box;
-   /*  -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0); */
+  
        -webkit-transform: translate(0, 1000px);
       transform: translate(0, 1000px);  
    
   }
 
-  .mylogos.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-        transition: all 800ms cubic-bezier(0.645,.045,.355,1);
-  }
+
 
   .mycards {
    
@@ -352,12 +330,96 @@ flex-direction: row;
    
   }
 
-   .mycards.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-        transition: all 800ms cubic-bezier(0.645,.045,.355,1);
+
+    .myart {
+   
+      order:6;
+ width: 250px;
+  height:100px;
+ 
+  
+    background: rgb(177, 29, 157);
+    
+    font-size: 12px;
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+    text-align: left;
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box;
+   /*  -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0); */
+   /*     -webkit-transform: translate(2000px, 0);
+      transform: translate(2000px, 0);   */
+   
+  }
+ 
+
+     .myscience {
+   
+      order:5;
+ width:250px;
+  height:100px;
+ 
+  
+    background: rgb(174, 190, 21);
+    
+    font-size: 12px;
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+    text-align: left;
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box;
+   /*  -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0); */
+   /*     -webkit-transform: translate(2000px, 0);
+      transform: translate(2000px, 0);   */
+   
   }
 
+
+      .mysocial {
+   
+      order:7;
+ width:100px;
+  height:100px;
+ 
+   display: none;
+    background: rgb(187, 74, 9);
+    
+    font-size: 12px;
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+    text-align: left;
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box;
+   /*  -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0); */
+   /*     -webkit-transform: translate(2000px, 0);
+      transform: translate(2000px, 0);   */
+   
+  }
+
+       .mycv {
+   
+      order:4;
+ width:100px;
+  height:100px;
+ 
+  /* display: none; */
+    background: rgb(9, 187, 104);
+    
+    font-size: 12px;
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+    text-align: left;
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box;
+   /*  -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0); */
+   /*     -webkit-transform: translate(2000px, 0);
+      transform: translate(2000px, 0);   */
+   
+  }
 
 .anima3 {
     
