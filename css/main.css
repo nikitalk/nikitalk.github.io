@@ -74,7 +74,7 @@ order:1;
   width:400px;
   height:100px;
 order:2;
-      
+
       background: blue;
   
       font-size: 12px;
@@ -248,6 +248,7 @@ opacity:0;
    display: flex;
    order:3; 
    width:700px;
+   height:200px;
 flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-end;
@@ -260,7 +261,7 @@ flex-direction: row;
    
       order:1;
  width:33.3%;
-  height:200px;
+  height:100%;
   
   
     background: green;
@@ -306,7 +307,7 @@ flex-direction: row;
    
       order:2;
  width:33.3%;
-  height:200px;
+  height:100%;
   
   
     background: yellow;
@@ -334,7 +335,7 @@ flex-direction: row;
    
       order:3;
  width:33.3%;
-  height:200px;
+  height:100%;
  
   
     background: lightgreen;
