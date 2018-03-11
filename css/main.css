@@ -177,17 +177,17 @@ opacity:0;
 .show-m.open {
  
 
- animation: topFadeOut 3.5s, polygons 1.5s infinite;  
+ animation: topFadeOut 3.5s forwards, polygons2 1.5s infinite; 
 
-}
-
-.show-m.open2 {
- 
- animation: polygons2 1.5s infinite; 
 }
 
 @keyframes topFadeOut {
   
+  from
+  {
+     opacity: 0;
+  }
+
   to {
    
     opacity: 1;
@@ -200,15 +200,14 @@ opacity:0;
 
       @keyframes polygons2 {
     
-      
       50% {
-    opacity:1;
+ 
         -webkit-transform: scale(1.5);
         transform: scale(1.5);
     }
 
     100% {
-  opacity:1;
+
         -webkit-transform: scale(1);
         transform: scale(1);
     }
