@@ -40,23 +40,32 @@
   height:20px;
 margin-top:5px;
 width:24px;
-
+border: 1px solid red;
 }
 
 
-
-
-#show-about-me {
-width:10px;
+#show-el {
+width:20px;
  height:18px;
 cursor: pointer;
-
+ position: relative;
+ top:0;
  
 } 
 
-#show-about-me span {
-  position: absolute;  
-  height: 4px;
+#show-about-me {
+width:20px;
+ height:18px;
+
+ position: absolute;
+ top:0;
+ 
+} 
+
+#show-el span {
+ 
+  top:0px;
+  height: 4px; 
      width:24px;
   
     background-color: black
