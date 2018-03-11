@@ -281,7 +281,21 @@ order:2;
   }
 
 
+.anima3 {
+    animation: polygons 1.5s infinite;
+  }
 
+    @keyframes polygons {
+    50% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+  }
 
  /* .anima1 {
     animation: polygons 0.5s forwards;
