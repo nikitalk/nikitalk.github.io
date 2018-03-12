@@ -27,8 +27,7 @@ function toopen (){
     
     document.getElementById("show-about-me").remove();
 
- 
-}
+ }
 
 
 menu.addEventListener('click', function (e) {
