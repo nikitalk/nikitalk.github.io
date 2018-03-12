@@ -25,11 +25,12 @@ margin-left:0;
 }
 
  .mybio {
-width:60%;
+width:50%;
 height:200px;
+font-size: 12px;
  } 
  .myphoto {
-width:40%;
+width:50%;
 height:200px;
  }
 

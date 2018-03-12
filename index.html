@@ -8,6 +8,9 @@
   <title>Nikita L. Karavaev Portfolio</title>
   <link href="css/main.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+  <script src="js/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
@@ -17,18 +20,16 @@
   <header class="gridheader">
 
     <div class="header__left anima1">
-      <img src="img/logo3.jpg" width=100 height=100>
+      <img src="img/logo5.svg" width=96 height=96>
     </div>
     <div class="header__right anima2">
-      <p>Nikita L. Karavaev
-        <br> Portfolio2
-      </p>
+      <p>Nikita L. Karavaev<br> Portfolio</p>
       </div>
 
       <div id="show-about-me" class="anima3">
     
         
-        Show
+        <img src="img/arrow.svg" width=50>
        
     
       </div>
@@ -41,21 +42,23 @@
 
   <section class="aboutme">
 <div class="mybio">
- 
-
+ <h1> Hello! I am Nikita!</h1>
+<p>
+  More than ten years, I am engaged in science. But most recently I was very interested in web development and design. This site is my still not very large portfolio. 
+</p>
 </div>
 
 
 
 <div class="myphoto">
-
+  <img src="img/photo2.jpg" width=100%>
 </div>
 
 <div class="social">
 
 </div>
 <div id="show-menu">
-  Show
+  <img src="img/arrow.svg" width=50>
   </div>
   </section>
 
@@ -118,8 +121,8 @@
 <!--   </div> -->
   </div> 
  
-
-  <script>
+  <script src="js/events.js"></script>
+  <!-- <script>
     /*
      * Open the drawer when the menu ison is clicked.
      */
@@ -139,7 +142,7 @@
    var drawer12 = document.querySelector('.mycv');
   var drawer13 = document.querySelector('.gridfooter');
   var drawer14 = document.querySelector('.mysocial');
-    menu.addEventListener('click', function (e) {
+    menu.addEventListener('click mousewheel', function (e) {
       drawer.classList.toggle('open');
       drawer2.classList.toggle('open');
       drawer3.classList.toggle('open');
@@ -175,7 +178,7 @@
             e.stopPropagation();
           });
     
-  </script>
+  </script> -->
 </body>
 
 </html>
