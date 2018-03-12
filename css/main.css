@@ -387,8 +387,7 @@ flex-direction: row;
     text-align: left;
     -moz-box-sizing: border-box; /* Для Firefox */  
     box-sizing: border-box;
-   /*  -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0); */
+   
     -webkit-transform: translate(0, 1000px);
       transform: translate(0, 1000px);   
    

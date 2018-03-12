@@ -1,5 +1,3 @@
-
-    
 var menu = document.querySelector('#show-about-me');
 var drawer = document.querySelector('.mybio');
  var drawer2 = document.querySelector('.myphoto');
