@@ -1,4 +1,4 @@
-var menu = document.querySelector('#show-about-me');
+ var menu = document.querySelector('#show-about-me');
 var drawer = document.querySelector('.mybio');
  var drawer2 = document.querySelector('.myphoto');
  var drawer3 = document.querySelector('.gridheader');
@@ -14,6 +14,7 @@ var drawer11 = document.querySelector('.myscience');
 var drawer12 = document.querySelector('.mycv');
 var drawer13 = document.querySelector('.gridfooter');
 var drawer14 = document.querySelector('.mysocial');
+var drawer15 = document.querySelector('.wrapper');
 
 let opens=false;
 let opens2=false;
@@ -24,7 +25,8 @@ function toopen (){
     drawer3.classList.add('open');
     menu2.classList.add('open');
     drawer9.classList.add('open');
-    
+  drawer15.classList.add('open');
+  drawer5.classList.add('open');
     document.getElementById("show-about-me").remove();
 
  }
@@ -78,3 +80,4 @@ addEventListener('mousewheel', function (e) {
       e.stopPropagation();
     });
 
+ 
