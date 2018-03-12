@@ -14,9 +14,9 @@
 
   <div class="wrapper"> 
   <!--   <div class="grid"> -->
-  <header class="gridheader">
 
-    <div class="header__left anima1">
+    <header>
+     <div class="header__left anima1">
       <img src="img/logo.svg" width=60 height=60>
     </div>
     <div class="header__right anima2">
@@ -24,45 +24,42 @@
         <br> Portfolio2
       </p>
       </div>
-
+ 
       <div id="show-about-me" class="anima3">
     
         
         Show
        
     
-      </div>
-    
+      </div> 
+    </header>
+
      <!--  <a id="show-about-me"> -->
       <!--  </a> -->
  
-  </header>
 
 
-  <section class="aboutme">
+
+
 <div class="mybio">
  
-
+vfvf
 </div>
 
 
 
 <div class="myphoto">
-
+ff
 </div>
 
-<div class="social">
-
-</div>
-<div id="show-menu">
-  Show
+<div id="show-menu" class="">
+  Show222
   </div>
-  </section>
-
 
  
-  <nav class="nav">
 
+ 
+  
     
 
 
@@ -93,19 +90,18 @@
 <div class="mycv">
 
 </div>
-  </nav>
+  
 
   <!--
   <main class="myportfolio">
 
-     
-      
+         
   
     
 
   </main>-->
 
-  <footer class="gridfooter">
+
     <div class="copyright">
     </div>
 
@@ -114,7 +110,7 @@
     </div>
  
  
-  </footer> 
+
 <!--   </div> -->
   </div> 
  
@@ -126,14 +122,14 @@
     var menu = document.querySelector('#show-about-me');
       var drawer = document.querySelector('.mybio');
        var drawer2 = document.querySelector('.myphoto');
-       var drawer3 = document.querySelector('.gridheader');
+   
        var drawer4 = document.querySelector('.mysites');
   var menu2 = document.querySelector('#show-menu');
   var drawer5 = document.querySelector('.aboutme');
  var drawer6 = document.querySelector('.show-m');
  var drawer7 = document.querySelector('.mylogos');
   var drawer8 = document.querySelector('.mycards');
-  var drawer9 = document.querySelector('.social');
+
   var drawer10 = document.querySelector('.myart');
   var drawer11 = document.querySelector('.myscience');
    var drawer12 = document.querySelector('.mycv');
@@ -142,13 +138,13 @@
     menu.addEventListener('click', function (e) {
       drawer.classList.toggle('open');
       drawer2.classList.toggle('open');
-      drawer3.classList.toggle('open');
+    
       menu2.classList.toggle('open');
-   drawer9.classList.toggle('open');
+
      
     
       document.getElementById("show-about-me").remove();
-      document.getElementById("show-el").remove();
+    
       e.stopPropagation();
     });
 
