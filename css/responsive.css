@@ -1,20 +1,20 @@
 @media screen and (max-width:700px) {
 .wrapper {
-    width: 100%;
-    grid-template-columns: 1fr;
+   /*  width: 100%; */
+     grid-template-columns: 1fr; 
   grid-template-rows: 100px 0px 200px 0px 200px 100px 100px;
   grid-template-areas:
       "header"
       "arrow"
       "aboutme"
-       "arrow"
+       "arrow2"
       "nav"
       "social"
       "footer";
 
-      align-content: stretch;
+    /*   align-content: stretch;
 align-items: stretch; 
-justify-content: stretch; 
+justify-content: stretch;  */
 }
 
 .gridheader {

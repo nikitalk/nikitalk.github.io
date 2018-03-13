@@ -24,7 +24,11 @@ grid-template-columns: 100px 100px 100px 100px 100px 100px;
       "aboutme aboutme aboutme aboutme aboutme social"
         ". . arrow2 . . ."
       "nav nav nav nav nav nav"
-      ". . footer footer footer footer";
+      ". . footer footer footer footer"; 
+
+
+
+
 align-content: center;
 align-items: center; 
 justify-content: center; 
