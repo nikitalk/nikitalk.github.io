@@ -1,8 +1,10 @@
-@media screen and (max-width:700px) {
+@media screen and (max-width:600px) and (min-height:600px) {
 .wrapper {
    /*  width: 100%; */
-     grid-template-columns: 1fr; 
-  grid-template-rows: 100px 0px 200px 0px 200px 100px 100px;
+   min-width:350px;
+   min-height:800px;
+     grid-template-columns: auto; 
+  grid-template-rows: 100px 0px 200px 0px 300px 100px 100px;
   grid-template-areas:
       "header"
       "arrow"
@@ -12,9 +14,9 @@
       "social"
       "footer";
 
-    /*   align-content: stretch;
-align-items: stretch; 
-justify-content: stretch;  */
+      align-content: center;
+      align-items: center; 
+      justify-content: center; 
 }
 
 .gridheader {
@@ -26,19 +28,29 @@ justify-content: stretch;  */
   display: grid;
      
   /*       margin-top:300px; */
-        -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); 
+  -webkit-transform: translate(0, 250px);
+  transform: translate(0, 250px);
   align-self: center;
   justify-self: center;
+
     -moz-box-sizing: border-box; /* Для Firefox */  
     box-sizing: border-box;
 
-     grid-template-columns: 100px auto;
+     grid-template-columns: 100px 1fr;
   grid-template-rows: 100px;
   grid-template-areas:
       "headerleft headerright";
 
 }
+
+#show-about-me {
+  
+  margin-top:0;
+   margin-left:10px; 
+/*   justify-content: end; */
+  margin-top:500px;
+  
+  } 
 
 .aboutme {
     grid-area: aboutme;
@@ -57,20 +69,66 @@ justify-content: stretch;  */
     -moz-box-sizing: border-box; /* Для Firefox */  
     box-sizing: border-box;
  
-     grid-template-columns: auto auto;
+     grid-template-columns: 1fr 1fr;
   grid-template-rows: 200px;
   grid-template-areas:
       "hello photo";
         }
 
+        .nav {
+          
+        
+         grid-area: nav;
+         
+             width: 100%;
+             height:100%;
+         
+          display: grid;
+             
+          /*       margin-top:300px; */
+          
+          align-self: center;
+          justify-self: center;
+            -moz-box-sizing: border-box; /* Для Firefox */  
+            box-sizing: border-box;
+        
+             grid-template-columns: auto auto;
+          grid-template-rows: 100px 100px 100px;
+          grid-template-areas:
+             "sites logos "
+             "cards art"
+             "cv science";
+        
+        
+            
+        
+        }
+
+        
+  .gridfooter {
+    grid-area:footer;
+       width: 100%;
+       height:100%;
+   margin-top:-4px;
+    display: grid;
+    
+      align-self: center;
+      justify-self: center;
+        grid-template-columns:1fr 100px;
+    grid-template-rows: 100px;
+    grid-template-areas:
+        "copyright contacts";
+  
+  }
+
 
 }
 
 
-@media screen and (max-height:600px)
+@media screen and (min-height:600px)
 {
     .wrapper {
-         height: 600px;
+      height: 700px;
     }
 }
 

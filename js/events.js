@@ -25,7 +25,7 @@ function toopen (){
     drawer2.classList.add('open');
     drawer3.classList.add('open');
     menu2.classList.add('open');
-    drawer9.classList.add('open');
+  
   
   drawer5.classList.add('open');
     document.getElementById("show-about-me").remove();
@@ -54,7 +54,7 @@ if (opens) menu2.addEventListener('click', function (e) {
            drawer11.classList.add('open');
             drawer12.classList.add('open');
              drawer13.classList.add('open');
-
+             drawer9.classList.add('open');
       drawer16.classList.add('open');
       drawer17.classList.add('open');
          
