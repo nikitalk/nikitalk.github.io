@@ -3,6 +3,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  min-width:340px;
   border: 0;
   font-size: 100%;
   font: inherit;
@@ -11,10 +12,10 @@
 margin:0;
     -moz-box-sizing: border-box; /* Для Firefox */  
       box-sizing: border-box;
-  overflow: hidden;
+ 
   display: flex;
         flex-wrap: nowrap;
-     
+     align-content:center;
         align-items: center; 
         flex-direction: column; 
          align-items: center;
@@ -25,26 +26,56 @@ margin:0;
 
 .gridheader {
   order:1;
-     width: 400px;
+     width: 80%;
      height:100px;
  
   display: flex;
         flex-wrap: wrap;
-        margin-top:300px;
+        /* margin-top:300px; */
    /*      -webkit-transform: translate(0, 200px);
     transform: translate(0, 200px); */
-    justify-content: center;
+    justify-content: space-around;
     -moz-box-sizing: border-box; /* Для Firefox */  
     box-sizing: border-box;
 
 }
 
 
+
+.logo {
+  order:1;
+ 
+}
+.title {
+  order:2;
+color:#fff;
+align-self:center;
+font-family: "Orbitron";
+padding-top:7px;
+text-align:right;
+}
+
+.photo {
+  order:3;
+  min-height:200px;
+  width:80%;
+  display:flex;
+  justify-content: center;
+
+}
+
+
+.photo img {
+   max-width:100%; 
+   max-height:280px; 
+   border-radius: 10px;
+  }
+
 #show-about-me {
 
 
 cursor: pointer; 
-  order:3;
+  order:2;
  
 margin-top:5px;
 
@@ -52,72 +83,82 @@ margin-top:5px;
 
 } 
 
+.myportfolio {
+  order:4;
+  display:flex;
+  width:80%;
+ margin:20px;
+  flex-wrap:wrap;
+  justify-content: space-around;
+/*   flex-direction: row;  */
+}
 
-.header__left {
-width:100px;
-height:100px;
-order:1;
- border:2px solid white;
-
-    background: lightblue;
-   
-    font-size: 12px;
-    font-family: "source-sans-pro", sans-serif;
-    color: white;
-    text-align: left;
-    -moz-box-sizing: border-box; /* Для Firefox */  
-    box-sizing: border-box;
-    
-
-   /*  -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0); */
-  
+@media screen and (max-width:760px){
+  .wrapper {
+    min-height:800px; 
+  }
+  .myportfolio {
+    height:400px;
   }
 
 
-  .header__right {
-  width:300px;
-  height:100px;
-order:2;
-border:2px solid white;
-border-left:0;
-     /*  background: #990505; */
-  
-      font-size: 12px;
-      
-      color: white;
-      text-align: center;
-      -moz-box-sizing: border-box; /* Для Firefox */  
-      box-sizing: border-box;
-     /*  -webkit-transform: translate(-300px, 0);
-      transform: translate(-300px, 0); */
-      font-family: 'Orbitron', sans-serif;
-      font-size: 22px;
-      padding: 0 10px 10px 10px;
-      
+}
+
+@media screen and (max-width:517px){
+  .wrapper {
+    min-height:1000px; 
+  }
+  .myportfolio {
+    height:600px;
   }
 
+}
 
   
+.work-1 {
+  order:1;
+  width:25%;
+  height:200px;
+  min-width:200px;
+  background:red;
+}
 
- .gridheader.open {
+.work-2 {
+  order:2;
+  width:25%;
+  height:200px;
+ 
+ 
+ 
+  min-width:200px;
+  background:yellow;
+}
+.work-3 {
+  order:3;
+  width:25%;
+  height:200px;
+  min-width:200px;
+  background:blue;
+}
+
+ /* .gridheader.open {
    margin-left:-200px;
   margin-top:200px;
-  margin-bottom:-2px;
+  margin-bottom:-2px; */
 /*   -webkit-transform: translate(0, 0);
     transform: translate(0, 0); */
-         transition: all 800ms cubic-bezier(0.645,.045,0.355,1);  
+  /*        transition: all 800ms cubic-bezier(0.645,.045,0.355,1);  
   }
 
   .gridheader.open2 {
     margin-left:-200px;
    margin-top:200px;
-   margin-bottom:-2px;
+   margin-bottom:-2px; */
 /*    -webkit-transform: translate(0, 0);
      transform: translate(0, 0); */
-          transition: all 800ms cubic-bezier(0.645,.045,0.355,1);  
+        /*   transition: all 800ms cubic-bezier(0.645,.045,0.355,1);  
    }
-  
+   */
 
   body {
     margin: 0;
@@ -187,25 +228,7 @@ opacity:0;margin-top:5px;
   }
 
 
-  .mybio {
-     width:300px;
-     height: 200px;
-     order:1;
-     padding-top: 0;
-     padding-left: 10px;
-     padding-right: 10px;
-       padding-bottom: 10px;
-         border:2px solid white;
-      
-      font-size: 14px;
-      font-family: 'Mina', sans-serif;
-      color: white;
-      text-align: left;
-      -moz-box-sizing: border-box; /* Для Firefox */  
-      box-sizing: border-box;
-       -webkit-transform: translate(-1000px, 0);
-      transform: translate(-1000px, 0); 
-  }
+
 
   .mybio.open, .myphoto.open, .social.open, .mysites.open, .mylogos.open, .mycards.open, .myart.open, .myscience.open, .mycv.open, .gridfooter.open {
     -webkit-transform: translate(0, 0);
@@ -214,284 +237,22 @@ opacity:0;margin-top:5px;
   }
 
 
-  .myphoto {
-    width:200px;
-     height: 200px;
-     order:2;
   
-      border:2px solid white;
-      font-size: 12px;
-      font-family: "source-sans-pro", sans-serif;
-      color: white;
-      text-align: left;
-      -moz-box-sizing: border-box; /* Для Firefox */  
-      box-sizing: border-box;
-        -webkit-transform: translate(0, 1000px);
-      transform: translate(0, 1000px); 
-     /*  -webkit-transform: translate(-300px, 0);
-      transform: translate(-300px, 0); */
-  
-  }
-
-  .social {
-    width:100px;
-     height: 100px;
-     order:3;
-     border:2px solid white;
-      margin-top:100px;
-      font-size: 12px;
-      font-family: "source-sans-pro", sans-serif;
-      color: white;
-      text-align: left;
-      -moz-box-sizing: border-box; /* Для Firefox */  
-      box-sizing: border-box;
-    /*     -webkit-transform: translate(1000px, 0);
-      transform: translate(1000px, 0);  */
-       -webkit-transform: translate(1000px, 0);
-      transform: translate(1000px, 0); 
-  
-  }
-  
-
-.nav {
-   display: flex;
-   order:3; 
-   width:600px;
-   height:100px;
-flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-      
-
-}
-
-  .mysites {
-   
-      order:1;
- width:200px;
-  height:100%;
-  
-  
-  border:2px solid white;
-    
-    font-size: 12px;
-    font-family: "source-sans-pro", sans-serif;
-    color: white;
-    text-align: left;
-    -moz-box-sizing: border-box; /* Для Firefox */  
-    box-sizing: border-box;
-  
-      -webkit-transform: translate(-2000px, 0);
-      transform: translate(-2000px, 0);  
-   
-  }
-
-   
-  
-  /* .mysites:hover {
-    cursor: pointer;
-  
-      background-image: url(../img/bg-menu.jpg);
-          transform: rotateZ(-45deg) scale(10) translateY(27px);
-    transition: all 800ms cubic-bezier(0.645,.045,.355,1);
-  }
- */
-
- .mysites.show {
-    background-image: url(../img/bg-menu.jpg);
-          transform: rotateZ(-45deg) scale(10) translateY(27px);
-    transition: all 800ms cubic-bezier(0.645,.045,.355,1);
-  }
-
-
-
- .mylogos {
-   
-      order:2;
- width:200px;
-  height:100%;
-  
-  
-  border:2px solid white;
-    
-    font-size: 12px;
-    font-family: "source-sans-pro", sans-serif;
-    color: white;
-    text-align: left;
-    -moz-box-sizing: border-box; /* Для Firefox */  
-    box-sizing: border-box;
-  
-       -webkit-transform: translate(0, 1000px);
-      transform: translate(0, 1000px);  
-   
-  }
-
-
-
-  .mycards {
-   
-      order:3;
- width:200px;
-  height:100%;
- 
-  
-  border:2px solid white;
-    
-    font-size: 12px;
-    font-family: "source-sans-pro", sans-serif;
-    color: white;
-    text-align: left;
-    -moz-box-sizing: border-box; /* Для Firefox */  
-    box-sizing: border-box;
-   /*  -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0); */
-       -webkit-transform: translate(2000px, 0);
-      transform: translate(2000px, 0);  
-   
-  }
-
-
-    .myart {
-   
-      order:7;
- width: 200px;
-  height:100px;
- 
-  
-  border:2px solid white;
-    
-    font-size: 12px;
-    font-family: "source-sans-pro", sans-serif;
-    color: white;
-    text-align: left;
-    -moz-box-sizing: border-box; /* Для Firefox */  
-    box-sizing: border-box;
-   /*  -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0); */
-       -webkit-transform: translate(2000px, 0);
-      transform: translate(2000px, 0);   
-     }
- 
-
-     .myscience {
-   
-      order:6;
- width:200px;
-  height:100px;
- 
-  border:2px solid white;
-    
-    font-size: 12px;
-    font-family: "source-sans-pro", sans-serif;
-    color: white;
-    text-align: left;
-    -moz-box-sizing: border-box; /* Для Firefox */  
-    box-sizing: border-box;
-   
-    -webkit-transform: translate(0, 1000px);
-      transform: translate(0, 1000px);   
-   
-  }
-
-
-      .mysocial {
-   
-      order:4;
- width:100px;
-  height:100px;
- 
- 
-  border:2px solid white;
-    
-    font-size: 12px;
-    font-family: "source-sans-pro", sans-serif;
-    color: white;
-    text-align: left;
-    -moz-box-sizing: border-box; /* Для Firefox */  
-    box-sizing: border-box;
-   /*  -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0); */
-        -webkit-transform: translate(2000px, 0);
-      transform: translate(2000px, 0);  
-   
-  }
-
-       .mycv {
-   
-      order:5;
- width:100px;
-  height:100px;
- 
-  /* display: none; */
-  border:2px solid white;
-    
-    font-size: 12px;
-    font-family: "source-sans-pro", sans-serif;
-    color: white;
-    text-align: left;
-    -moz-box-sizing: border-box; /* Для Firefox */  
-    box-sizing: border-box;
-   /*  -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0); */
-    -webkit-transform: translate(-1000px, 0);
-      transform: translate(-1000px, 0);  
-   
-  }
 
 
   .gridfooter {
-  order:4;
-     width: 400px;
-     height:100px;
- 
+  order:5;
+     width: 100%;
+     /* height:100px; */
+ font-family:Mina;
+ font-size:14px;
+ color:#fff;
   display: flex;
         flex-wrap: wrap;
-        margin-left:200px;
-        margin-top:100px;
-         -webkit-transform: translate(0, 1000px);
-    transform: translate(0, 1000px);
+        
     justify-content: center;
 
 }
-
-
-.copyright {
-width:100px;
-height:100px;
-order:2;
- 
-border:2px solid white;
-   
-    font-size: 12px;
-    font-family: "source-sans-pro", sans-serif;
-    color: white;
-    text-align: left;
-    -moz-box-sizing: border-box; /* Для Firefox */  
-    box-sizing: border-box;
-    
-
-   /*  -webkit-transform: translate(-300px, 0);
-    transform: translate(-300px, 0); */
-  
-  }
-
-
-  .mycontacts {
-  width:300px;
-  height:100px;
-order:1;
-border:2px solid white;
-  
-      font-size: 12px;
-      font-family: "source-sans-pro", sans-serif;
-      color: white;
-      text-align: left;
-      -moz-box-sizing: border-box; /* Для Firefox */  
-      box-sizing: border-box;
-     /*  -webkit-transform: translate(-300px, 0);
-      transform: translate(-300px, 0); */
-     
-  }
 
 .anima3 {
     

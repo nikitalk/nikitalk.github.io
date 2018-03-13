@@ -1,4 +1,4 @@
-var menu = document.querySelector('#show-about-me');
+/* var menu = document.querySelector('#show-about-me');
 var drawer = document.querySelector('.mybio');
  var drawer2 = document.querySelector('.myphoto');
  var drawer3 = document.querySelector('.gridheader');
@@ -78,3 +78,4 @@ addEventListener('mousewheel', function (e) {
       e.stopPropagation();
     });
 
+ */
