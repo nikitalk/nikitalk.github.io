@@ -1,23 +1,30 @@
 @media screen and (max-width:600px) and (min-height:600px) {
 .wrapper {
    /*  width: 100%; */
-   min-width:350px;
-   min-height:800px;
+   min-width:320px;
+   min-height:812px;
      grid-template-columns: auto; 
-  grid-template-rows: 100px 0px 200px 0px 300px 100px 100px;
+  grid-template-rows: 100px 2px 200px 2px 300px 6px 100px 2px 100px;
   grid-template-areas:
       "header"
       "arrow"
       "aboutme"
        "arrow2"
       "nav"
+      "."
       "social"
+      "."
       "footer";
 
       align-content: center;
       align-items: center; 
       justify-content: center; 
 }
+
+.gridfooter {
+  margin:0;
+}
+
 
 .gridheader {
   grid-area: header;
@@ -35,11 +42,12 @@
 
     -moz-box-sizing: border-box; /* Для Firefox */  
     box-sizing: border-box;
+border:0;
 
-     grid-template-columns: 100px 1fr;
+     grid-template-columns: 100px 2px 1fr;
   grid-template-rows: 100px;
   grid-template-areas:
-      "headerleft headerright";
+      "headerleft . headerright";
 
 }
 
@@ -61,7 +69,7 @@
     } 
 
 
-  .gridheader.open, .aboutme.open {
+  .gridheader.open {
     margin:0;
   }
 .aboutme {
@@ -81,10 +89,10 @@
     -moz-box-sizing: border-box; /* Для Firefox */  
     box-sizing: border-box;
  
-     grid-template-columns: 1fr 1fr;
+     grid-template-columns: 1fr 2px 1fr;
   grid-template-rows: 200px;
   grid-template-areas:
-      "hello photo";
+      "hello . photo";
         }
 
         .nav {
@@ -104,32 +112,37 @@
             -moz-box-sizing: border-box; /* Для Firefox */  
             box-sizing: border-box;
         
-             grid-template-columns: auto auto;
-          grid-template-rows: 100px 100px 100px;
+             grid-template-columns: auto 2px auto;
+          grid-template-rows: 100px 2px 100px 2px 100px;
           grid-template-areas:
-             "sites logos "
-             "cards art"
-             "cv science";
+             "sites . logos "
+             ". . ."
+             "cards . art"
+             ". . ."
+             "cv . science";
         
         
             
         
         }
 
-        
+.aboutme.open {
+  margin-top:0;
+  margin-left:0;
+}        
   .gridfooter {
     grid-area:footer;
        width: 100%;
        height:100%;
-   margin-top:-4px;
+   
     display: grid;
     
       align-self: center;
       justify-self: center;
-        grid-template-columns:1fr 100px;
+        grid-template-columns:1fr 2px 100px;
     grid-template-rows: 100px;
     grid-template-areas:
-        "copyright contacts";
+        "copyright . contacts";
   
   }
 
@@ -137,10 +150,47 @@
 }
 
 
-@media screen and (min-height:600px)
+@media screen and (max-height:600px)
 {
     .wrapper {
       height: 700px;
     }
+    .showsites {
+      position:absolute;
+      display:none;
+      top:0;
+      left:0;
+      height: 100%;
+    }
+
+    .gridheader{
+      -webkit-transform: translate(100px, 0);
+      transform: translate(100px, 0);
+    }
+
+
+    .gridheader.open{
+      margin-top:0;
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    .aboutme.open{
+      margin-top:0;
+    
+    }
+    #show-about-me {
+      
+      margin-top:0;
+      
+      
+      
+      } 
+      #show-menu {
+        
+        margin-top:0;
+        
+        
+        
+        } 
 }
 

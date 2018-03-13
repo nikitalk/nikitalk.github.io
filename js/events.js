@@ -17,6 +17,7 @@ var drawer13 = document.querySelector('.gridfooter');
 
 var drawer16 = document.querySelector('.copyright');
 var drawer17 = document.querySelector('.mycontacts');
+var drawer18 = document.querySelector('.showsites');
 let opens=false;
 let opens2=false;
 
@@ -82,9 +83,15 @@ addEventListener('mousewheel', function (e) {
 
 
   drawer4.addEventListener('click', function (e) {
-      drawer4.classList.toggle('show');
+      drawer18.classList.toggle('open');
 
       e.stopPropagation();
     });
 
+
+    drawer18.addEventListener('click', function (e) {
+      drawer18.classList.toggle('open');
+
+      e.stopPropagation();
+    });
  
