@@ -1,99 +1,76 @@
 @media screen and (max-width:700px) {
+.wrapper {
+    width: 100%;
+    grid-template-columns: 1fr;
+  grid-template-rows: 100px 0px 200px 0px 200px 100px 100px;
+  grid-template-areas:
+      "header"
+      "arrow"
+      "aboutme"
+       "arrow"
+      "nav"
+      "social"
+      "footer";
 
-    .gridheader {
-   
-        width:100%;
-       }
-
-       .gridfooter {
-           width:100%;
-      
-    }
- .header__left, .copyright {
-width:20%;
-
- }
- .header__right, .mycontacts {
-width:80%;
-
- }
- .aboutme {
-margin-left:0;
- width:100%;
+      align-content: stretch;
+align-items: stretch; 
+justify-content: stretch; 
 }
 
- .mybio {
-width:50%;
-height:200px;
-font-size: 12px;
- } 
- .myphoto {
-width:50%;
-height:200px;
- }
-
-  .social {
-display:none;
-}
-
-.mysocial {
-opacity:1;
-}
-
-  .mysocial.open {
-
--webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-         transition: all 800ms cubic-bezier(0.645,.045,0.355,1);  
-}
-
-.nav {
-width:100%;
-height:100px;
-
-}
-
-.mysites, .mylogos, .mycards {
-    width:33.3%;
-}
-.myart,.myscience, .mysocial,.mycv {
-    width:25%
-}
-
-
-.gridheader.open {
-   margin-left:0px;
-  
-  -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-         transition: all 800ms cubic-bezier(0.645,.045,0.355,1);  
-  }
-
-  .gridfooter.open {
-   margin-left:0px;
-  
-  -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-         transition: all 800ms cubic-bezier(0.645,.045,0.355,1);  
-  }
-
-
-}
-
-
-@media screen and (max-height:700px)
-{
-    .wrapper {
-        height: 700px;
-  border: 1px solid rgb(26, 138, 158);
-    }
-}
-
-@media screen and (min-height:700px)
-{
-    .wrapper {
-align-items: center; 
-justify-content: center;
+.gridheader {
+  grid-area: header;
  
+     width: 100%;
+     height:100%;
+ 
+  display: grid;
+     
+  /*       margin-top:300px; */
+        -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); 
+  align-self: center;
+  justify-self: center;
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box;
+
+     grid-template-columns: 100px auto;
+  grid-template-rows: 100px;
+  grid-template-areas:
+      "headerleft headerright";
+
+}
+
+.aboutme {
+    grid-area: aboutme;
+ 
+     width: 100%;
+     height:100%;
+     display:grid;
+ 
+  
+     
+  /*       margin-top:300px; */
+   /*      -webkit-transform: translate(0, 200px);
+    transform: translate(0, 200px); */
+  align-self: center;
+  justify-self: center;
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box;
+ 
+     grid-template-columns: auto auto;
+  grid-template-rows: 200px;
+  grid-template-areas:
+      "hello photo";
+        }
+
+
+}
+
+
+@media screen and (max-height:600px)
+{
+    .wrapper {
+         height: 600px;
     }
 }
+

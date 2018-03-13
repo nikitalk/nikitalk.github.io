@@ -13,9 +13,10 @@ var drawer10 = document.querySelector('.myart');
 var drawer11 = document.querySelector('.myscience');
 var drawer12 = document.querySelector('.mycv');
 var drawer13 = document.querySelector('.gridfooter');
-var drawer14 = document.querySelector('.mysocial');
-var drawer15 = document.querySelector('.wrapper');
 
+
+var drawer16 = document.querySelector('.copyright');
+var drawer17 = document.querySelector('.mycontacts');
 let opens=false;
 let opens2=false;
 
@@ -25,7 +26,7 @@ function toopen (){
     drawer3.classList.add('open');
     menu2.classList.add('open');
     drawer9.classList.add('open');
-  drawer15.classList.add('open');
+  
   drawer5.classList.add('open');
     document.getElementById("show-about-me").remove();
 
@@ -42,15 +43,6 @@ if (opens) menu2.addEventListener('click', function (e) {
   });
 });
 
-addEventListener('mousewheel', function (e) {
-    if (!opens) {toopen();opens=true;}
-    e.stopPropagation();
-    if (opens) {addEventListener('mousewheel', function (e) {
-        
-      if (!opens2) {toopen2();opens2=true;}
-      e.stopPropagation();
-      });}
-    });
 
 
     function toopen2 (){
@@ -62,12 +54,26 @@ addEventListener('mousewheel', function (e) {
            drawer11.classList.add('open');
             drawer12.classList.add('open');
              drawer13.classList.add('open');
-             drawer14.classList.add('open');
-      
+
+      drawer16.classList.add('open');
+      drawer17.classList.add('open');
+         
+   
      document.getElementById("show-menu").remove();
   
     }
     
+addEventListener('mousewheel', function (e) {
+  if (!opens) { toopen(); opens = true; }
+  e.stopPropagation();
+  if (opens) {
+    addEventListener('mousewheel', function (e) {
+
+      if (!opens2) { toopen2(); opens2 = true; }
+      e.stopPropagation();
+    });
+  }
+});
 
   
 
