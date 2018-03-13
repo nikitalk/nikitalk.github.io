@@ -18,13 +18,14 @@
        
              grid-gap: 0px;    
 grid-template-columns: 100px 100px 100px 100px 100px 100px;
-  grid-template-rows: 100px 0px 200px 0px 200px 100px;
+  grid-template-rows: 100px 2px 200px 4px 200px 5px 100px;
   grid-template-areas:
       "header header header header . ."
       ". . . arrow . ."
       "aboutme aboutme aboutme aboutme aboutme social"
-        ". . arrow2 . . ."
+        ". . . arrow2 . ."
       "nav nav nav nav nav nav"
+      ". . . . . ."
       ". . footer footer footer footer"; 
 
 
@@ -68,9 +69,9 @@ width:100%;
 height:100%;
 cursor: pointer; 
  
-justify-self: center;
+text-align: center;
  margin-top:500px;
-margin-left:-100px; 
+margin-left:-50px; 
 
 
 } 
@@ -80,14 +81,15 @@ margin-left:-100px;
 width:100%;
 height:100%;
 grid-area: headerleft;
- border:2px solid white;
+/*  border:2px solid white; */
+ border-radius: 5px;
 
-    background: lightblue;
+    background: darkblue;
    
     font-size: 12px;
     font-family: "source-sans-pro", sans-serif;
     color: white;
-    text-align: left;
+    text-align: center;
     -moz-box-sizing: border-box; /* Для Firefox */  
     box-sizing: border-box;
     
@@ -103,7 +105,7 @@ grid-area: headerleft;
   height:100%;
 grid-area: headerright;
 border:2px solid white;
-border-left:0;
+border-radius:5px;
      /*  background: #990505; */
   
       font-size: 12px;
@@ -127,7 +129,25 @@ border-left:0;
   /*  margin-left:-200px;
   margin-top:200px;
   margin-bottom:11px; */
-   
+   margin-top:300px;
+   margin-left:125px;
+ -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);  
+         transition: all 800ms cubic-bezier(0.645,.045,0.355,1);  
+
+     /*     -webkit-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+   -moz-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+     -o-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+        transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000);  */
+
+
+  }
+   .aboutme.open {
+  /*  margin-left:-200px;
+  margin-top:200px;
+  margin-bottom:11px; */
+   margin-top:300px;
+   margin-left:125px;
  -webkit-transform: translate(0, 0);
       transform: translate(0, 0);  
          transition: all 800ms cubic-bezier(0.645,.045,0.355,1);  
@@ -140,12 +160,25 @@ border-left:0;
 
   }
 
-  .gridheader.open2 {
+  .gridheader.open2
+  {
+    /*   margin-left:-200px;
+     margin-top:0;
+     margin-bottom:-2px; */
+  /*    -webkit-transform: translate(0, 0);
+       transform: translate(0, 0); */
+       margin-top:0;
+       margin-left:0;
+            transition: all 800ms cubic-bezier(0.645,.045,0.355,1);  
+     }
+      .aboutme.open2 {
   /*   margin-left:-200px;
    margin-top:0;
    margin-bottom:-2px; */
 /*    -webkit-transform: translate(0, 0);
      transform: translate(0, 0); */
+     margin-top:0;
+     margin-left:0;
           transition: all 800ms cubic-bezier(0.645,.045,0.355,1);  
    }
   
@@ -163,8 +196,8 @@ border-left:0;
 grid-area: arrow2;
 width:100%;
 height:100%;
-opacity:0;margin-top:50px;
-margin-left:50px;
+opacity:0; margin-top:300px;
+margin-left:0x; 
 
 } 
 
@@ -218,6 +251,8 @@ margin-left:50px;
       "hello photo .";
         }
 
+        
+
   .mybio {
      width:100%;
      height: 100%;
@@ -227,7 +262,8 @@ margin-left:50px;
      padding-right: 10px;
        padding-bottom: 10px; */
          border:2px solid white;
- 
+         border-radius:5px;
+         opacity:0;
       font-size: 14px;
       font-family: 'Mina', sans-serif;
       color: white;
@@ -238,10 +274,17 @@ margin-left:50px;
       transform: translate(-1000px, 0); 
   }
 
+  .mybio.open, .myphoto.open {
+    opacity:1;
+   
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+        transition: all 800ms cubic-bezier(0.645,.045,.355,1);
+  }
 
-
-  .copyright.open, .mycontacts.open, .mybio.open, .myphoto.open, .social.open, .mysites.open, .mylogos.open, .mycards.open, .myart.open, .myscience.open, .mycv.open, .gridfooter.open {
-  
+  .copyright.open, .mycontacts.open,  .social.open, .mysites.open, .mylogos.open, .mycards.open, .myart.open, .myscience.open, .mycv.open, .gridfooter.open {
+    opacity:1;
+   margin-top:-2px;
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
         transition: all 800ms cubic-bezier(0.645,.045,.355,1);
@@ -252,9 +295,11 @@ margin-left:50px;
     width:100%;
      height: 100%;
      grid-area: photo;
-
+     opacity:0;
       border:2px solid white;
+      border-radius:5px;
       font-size: 12px;
+      margin-left: 2px;
       font-family: "source-sans-pro", sans-serif;
       color: white;
       text-align: left;
@@ -272,8 +317,10 @@ margin-left:50px;
      height: 100px;
      grid-area: social;
      border:2px solid white;
- 
+     opacity:0;
       font-size: 12px;
+      border-radius:5px;
+      margin-left:4px;
       font-family: "source-sans-pro", sans-serif;
       color: white;
       text-align: left;
@@ -295,7 +342,7 @@ margin-left:50px;
  
      width: 100%;
      height:100%;
- 
+     margin-top:0px;
   display: grid;
      
   /*       margin-top:300px; */
@@ -306,10 +353,12 @@ margin-left:50px;
     box-sizing: border-box;
 
      grid-template-columns: 100px 100px 100px 100px 100px 100px;
-  grid-template-rows: 100px 100px;
+  grid-template-rows: 100px 2px 100px 4px;
   grid-template-areas:
      "sites sites logos logos cards cards"
-      ". cv art art science science";
+     ". . . . . ."
+      ". cv art art science science"
+      ". . . . . .";
 
 
     
@@ -322,9 +371,9 @@ margin-left:50px;
  width:100%;
   height:100%;
   
-  
+  opacity:0;
   border:2px solid white;
-    
+  border-radius:5px;
     font-size: 12px;
     font-family: "source-sans-pro", sans-serif;
     color: white;
@@ -361,17 +410,17 @@ margin-left:50px;
      grid-area:logos;
  width:100%;
   height:100%;
-  
+  border-radius:5px;
   
   border:2px solid white;
-    
+    margin-left:2px;
     font-size: 12px;
     font-family: "source-sans-pro", sans-serif;
     color: white;
     text-align: left;
     -moz-box-sizing: border-box; /* Для Firefox */  
     box-sizing: border-box;
-  
+    opacity:0;
        -webkit-transform: translate(0, 1000px);
       transform: translate(0, 1000px);  
    
@@ -384,10 +433,10 @@ margin-left:50px;
       grid-area:cards;
  width:100%;
   height:100%;
- 
-  
+  margin-left:4px;
+  border-radius:5px;
   border:2px solid white;
-    
+  opacity:0;
     font-size: 12px;
     font-family: "source-sans-pro", sans-serif;
     color: white;
@@ -407,10 +456,12 @@ margin-left:50px;
      grid-area:art;
  width: 100%;
   height:100%;
- 
-  
-  border:2px solid white;
-    
+  border-radius:5px;
+  margin-left:2px;
+  border:2px  solid white;
+  background-color:red;
+  margin-top:2px;
+  opacity:0;
     font-size: 12px;
     font-family: "source-sans-pro", sans-serif;
     color: white;
@@ -429,9 +480,11 @@ margin-left:50px;
       grid-area:science;
  width:100%;
   height:100%;
- 
+ margin-left:4px;
   border:2px solid white;
-    
+  border-radius:5px;
+  margin-top:2px;
+  opacity:0;
     font-size: 12px;
     font-family: "source-sans-pro", sans-serif;
     color: white;
@@ -451,10 +504,11 @@ margin-left:50px;
      grid-area:cv;
  width:100%;
   height:100%;
-
+margin-top:8px;
   /* display: none; */
   border:2px solid white;
-    
+  border-radius:5px;
+  opacity:0;
     font-size: 12px;
     font-family: "source-sans-pro", sans-serif;
     color: white;
@@ -473,7 +527,7 @@ margin-left:50px;
   grid-area:footer;
      width: 100%;
      height:100%;
- margin-top:-4px;
+ margin:0;
   display: grid;
     
       
@@ -490,9 +544,10 @@ margin-left:50px;
 width:100%;
 height:100%;
 grid-area: copyright;
- 
+border-radius:5px;
+margin-left:2px;
 border:2px solid white;
-   
+opacity:0;
     font-size: 12px;
     font-family: "source-sans-pro", sans-serif;
     color: white;
@@ -513,14 +568,15 @@ border:2px solid white;
   height:100%;
 grid-area:contacts;
 border:2px solid white;
-  
+margin-left:4px;
+border-radius:5px;
       font-size: 12px;
       font-family: "source-sans-pro", sans-serif;
       color: white;
       text-align: left;
       -moz-box-sizing: border-box; /* Для Firefox */  
       box-sizing: border-box;
-
+opacity:0;
         -webkit-transform: translate(1000px, 1000px);
       transform: translate(1000px, 1000px);  
      /*  -webkit-transform: translate(-300px, 0);

@@ -47,6 +47,7 @@ if (opens) menu2.addEventListener('click', function (e) {
 
     function toopen2 (){
         drawer3.classList.add('open2');
+        drawer5.classList.add('open2');
         drawer4.classList.add('open');
         drawer7.classList.add('open');
          drawer8.classList.add('open');

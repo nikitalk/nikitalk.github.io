@@ -51,7 +51,19 @@
   margin-top:500px;
   
   } 
+  #show-menu {
+    text-align: center;
+    margin-top:0;
+     margin-left:10px; 
+  /*   justify-content: end; */
+    /* margin-top:500px; */
+    
+    } 
 
+
+  .gridheader.open, .aboutme.open {
+    margin:0;
+  }
 .aboutme {
     grid-area: aboutme;
  
