@@ -17,18 +17,19 @@ function toopen (){
 
  }
 
-
+ let preventscroll=false; 
+ let preventscrollcol=0;
 menu.addEventListener('click', function (e) {
 toopen();
+preventscroll=true;
 e.stopPropagation();
 
 });
 
-let preventscroll=false; 
-let preventscrollcol=0;
+
 addEventListener('mousewheel', function (e) {
   console.log(preventscroll, ' ', preventscrollcol);
-  if (preventscrollcol<10) {
+  if (preventscrollcol<2) {
     e.preventDefault(); preventscrollcol++;}
  if (!preventscroll) {
 
