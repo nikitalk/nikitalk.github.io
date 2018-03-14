@@ -1,105 +1,42 @@
-<<<<<<< HEAD
-/* var menu = document.querySelector('#show-about-me');
-=======
- var menu = document.querySelector('#show-about-me');
->>>>>>> 786c53a9aecfd40e2cfc7118234d128083350943
-var drawer = document.querySelector('.mybio');
- var drawer2 = document.querySelector('.myphoto');
- var drawer3 = document.querySelector('.gridheader');
- var drawer4 = document.querySelector('.mysites');
-var menu2 = document.querySelector('#show-menu');
-var drawer5 = document.querySelector('.aboutme');
-var drawer6 = document.querySelector('.show-m');
-var drawer7 = document.querySelector('.mylogos');
-var drawer8 = document.querySelector('.mycards');
-var drawer9 = document.querySelector('.social');
-var drawer10 = document.querySelector('.myart');
-var drawer11 = document.querySelector('.myscience');
-var drawer12 = document.querySelector('.mycv');
-var drawer13 = document.querySelector('.gridfooter');
 
+var menu = document.querySelector('#show-about-me');
+var drawer1 = document.querySelector('.wrapper');
+ var drawer2 = document.querySelector('.photo');
+ var drawer3 = document.querySelector('.myportfolio');
+ var drawer4 = document.querySelector('.gridfooter');
+ var drawer5 = document.querySelector('.gridheader');
 
-var drawer16 = document.querySelector('.copyright');
-var drawer17 = document.querySelector('.mycontacts');
-var drawer18 = document.querySelector('.showsites');
-let opens=false;
-let opens2=false;
 
 function toopen (){
-    drawer.classList.add('open');
+  drawer1.classList.add('open');
     drawer2.classList.add('open');
     drawer3.classList.add('open');
-    menu2.classList.add('open');
-  
-  
-  drawer5.classList.add('open');
+    drawer4.classList.add('open');
+    drawer5.classList.add('open');
     document.getElementById("show-about-me").remove();
 
  }
 
-
+ let preventscroll=false; 
+ let preventscrollcol=0;
 menu.addEventListener('click', function (e) {
-if (!opens) {toopen();opens=true;
-}
+toopen();
+preventscroll=true;
 e.stopPropagation();
-if (opens) menu2.addEventListener('click', function (e) {
-    if (!opens2) {toopen2();opens2=true;}
-    e.stopPropagation();
-  });
+
 });
 
 
-
-    function toopen2 (){
-        drawer3.classList.add('open2');
-        drawer5.classList.add('open2');
-        drawer4.classList.add('open');
-        drawer7.classList.add('open');
-         drawer8.classList.add('open');
-           drawer10.classList.add('open'); 
-           drawer11.classList.add('open');
-            drawer12.classList.add('open');
-             drawer13.classList.add('open');
-             drawer9.classList.add('open');
-      drawer16.classList.add('open');
-      drawer17.classList.add('open');
-         
-   
-     document.getElementById("show-menu").remove();
-  
-    }
-    
 addEventListener('mousewheel', function (e) {
-  if (!opens) { toopen(); opens = true; }
-  e.stopPropagation();
-  if (opens) {
-    addEventListener('mousewheel', function (e) {
+  console.log(preventscroll, ' ', preventscrollcol);
+  if (preventscrollcol<2) {
+    e.preventDefault(); preventscrollcol++;}
+ if (!preventscroll) {
 
-      if (!opens2) { toopen2(); opens2 = true; }
-      e.stopPropagation();
-    });
-  }
-});
-
-  
-
-  
-
-
-  drawer4.addEventListener('click', function (e) {
-      drawer18.classList.toggle('open');
-
-      e.stopPropagation();
-    });
-
-<<<<<<< HEAD
- */
-=======
-
-    drawer18.addEventListener('click', function (e) {
-      drawer18.classList.toggle('open');
-
-      e.stopPropagation();
-    });
+ toopen(); 
+ preventscroll=true;
+ e.stopPropagation();
  
->>>>>>> 786c53a9aecfd40e2cfc7118234d128083350943
+}
+
+});
