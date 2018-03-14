@@ -4,7 +4,7 @@ var drawer1 = document.querySelector('.wrapper');
  var drawer2 = document.querySelector('.photo');
  var drawer3 = document.querySelector('.myportfolio');
  var drawer4 = document.querySelector('.gridfooter');
-
+ var drawer5 = document.querySelector('.gridheader');
 
 
 function toopen (){
@@ -12,7 +12,7 @@ function toopen (){
     drawer2.classList.add('open');
     drawer3.classList.add('open');
     drawer4.classList.add('open');
-    
+    drawer5.classList.add('open');
     document.getElementById("show-about-me").remove();
 
  }
@@ -21,11 +21,21 @@ function toopen (){
 menu.addEventListener('click', function (e) {
 toopen();
 e.stopPropagation();
+
 });
 
- 
+let preventscroll=false; 
+let preventscrollcol=0;
 addEventListener('mousewheel', function (e) {
-  toopen(); 
-  e.stopPropagation();
-  
+  console.log(preventscroll, ' ', preventscrollcol);
+  if (preventscrollcol<10) {
+    e.preventDefault(); preventscrollcol++;}
+ if (!preventscroll) {
+
+ toopen(); 
+ preventscroll=true;
+ e.stopPropagation();
+ 
+}
+
 });
