@@ -27,7 +27,7 @@ margin:0;
 .gridheader {
   order:1;
      width: 80%;
-     height:100px;
+      
  
   display: flex;
         flex-wrap: wrap;
@@ -37,14 +37,15 @@ margin:0;
     justify-content: space-around;
     -moz-box-sizing: border-box; /* Для Firefox */  
     box-sizing: border-box;
-
+    flex-direction: column;
 }
 
 
 
 .logo {
   order:1;
- 
+  align-self:center;
+  margin-left:10px;
 }
 .title {
   order:2;
@@ -52,41 +53,51 @@ color:#fff;
 align-self:center;
 font-family: "Orbitron";
 padding-top:7px;
-text-align:right;
+text-align:center;
 }
+
+
+#show-about-me {
+  
+  order:3;
+
+  
+   
+  align-self:center;
+  text-align:center;
+  
+  
+  } 
+
+  #show-about-me img {
+    cursor: pointer; 
+  }
 
 .photo {
   order:3;
   min-height:200px;
   width:80%;
-  display:flex;
+  display:none;
   justify-content: center;
 
 }
 
+.photo.open {
+  display:flex;
+}
 
- img {
+ .photo img, .myportfolio img {
    max-width:100%; 
    max-height:200px; 
    border-radius: 10px;
   
   }
 
-#show-about-me {
 
-
-cursor: pointer; 
-  order:2;
- 
-margin-top:5px;
-
-
-
-} 
 
 .myportfolio {
   order:4;
-  display:flex;
+  display:none;
   width:80%;
  margin:20px;
   flex-wrap:wrap;
@@ -97,6 +108,10 @@ margin-top:5px;
   
   text-align:center;
 /*   flex-direction: row;  */
+}
+
+.myportfolio.open {
+  display:flex;
 }
 
 @media screen and (max-width:760px){
@@ -258,11 +273,15 @@ opacity:0;margin-top:5px;
 
  font-size:14px;
  color:#fff;
-  display: flex;
+  display: none;
         flex-wrap: wrap;
         font-family:Mina;
     justify-content: center;
 
+}
+
+.gridfooter.open{
+  display:flex;
 }
 
 .anima3 {
