@@ -1,4 +1,4 @@
-var menu = document.querySelector("#show-projects");
+var menu = document.querySelector("#show-content");
 var drawer1 = document.querySelector(".wrapper");
 var drawer2 = document.querySelector(".photo");
 var drawer3 = document.querySelector(".myportfolio");
@@ -21,7 +21,7 @@ function toopen() {
 
   drawer5.style.cssText =
     "-webkit-transform:translate(0, 0px);transform:translate(0, 0px); transition: all 800ms cubic-bezier(0.645,.045,.355,1);";
-  document.getElementById("show-projects").remove();
+  document.getElementById("show-content").remove();
 }
 
 let preventscroll = false;
