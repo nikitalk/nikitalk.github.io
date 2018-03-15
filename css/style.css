@@ -36,7 +36,7 @@ body {
   margin-top: 30px;
 
   justify-content: space-around;
-  -moz-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   flex-direction: column;
 }
