@@ -29,12 +29,11 @@ margin:0;
   order:1;
      width: 80%;
       
- min-height:150px;
+/*  min-height:150px; */
   display: flex;
         flex-wrap: wrap;
-         margin-top:10px; 
-       -webkit-transform: translate(0, 200px);
-    transform: translate(0, 200px); 
+         margin-top:30px; 
+    
     justify-content: space-around;
     -moz-box-sizing: border-box; /* Для Firefox */  
     box-sizing: border-box;
@@ -47,6 +46,7 @@ margin:0;
   order:1;
   align-self:center;
   margin-left:10px;
+ 
 }
 
 
@@ -68,7 +68,7 @@ text-align:center;
    
   align-self:center;
   text-align:center;
-  
+
   
   } 
 
@@ -85,6 +85,7 @@ text-align:center;
   overflow:hidden;
   -webkit-transform: translate(-2000px, 0);
   transform: translate(-2000px, 0);
+   max-width:830px;
 }
 
 
@@ -92,7 +93,7 @@ text-align:center;
 .gridheader.open, .photo.open, .myportfolio.open, .gridfooter.open  {
   
   -webkit-transform: translate(0, 0);
-  transform: translate(0, 0x);
+  transform: translate(0, 0);
   transition: all 800ms cubic-bezier(0.645,.045,.355,1);
   }
 
@@ -220,7 +221,7 @@ text-align:center;
   
 .work-1 {
 
-  background-color: #eb584b;
+  background-color: #1496bf;
   overflow: hidden;
 width:250px;
 height:250px;
@@ -290,6 +291,23 @@ min-width:100%;
   transition: all 800ms cubic-bezier(0.645,.045,.355,1);
 }
 
+.bw4{
+
+  position:relative;
+  display:block;
+  top:0;
+  left:0;
+ /*  background-image: url(); */
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity:0;
+ 
+ min-height:100%;
+min-width:100%;
+  transition: all 800ms cubic-bezier(0.645,.045,.355,1);
+}
+
 .work-1:hover .bw1, .work-1:hover .bw2, .work-1:hover .bw3  {
   opacity:0.5;
  
@@ -314,7 +332,7 @@ display:block;
 position:relative;
 top:-220px;
 left:50px;
-font-size:26px;
+font-size:24px;
 height:48px;
 width:150px;
 text-shadow: 1px 1px 2px black;
