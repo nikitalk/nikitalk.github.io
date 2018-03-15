@@ -16,7 +16,7 @@ body {
 
   overflow-x: hidden;
   margin: 0;
-  -moz-box-sizing: border-box; /* Для Firefox */
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 
   display: flex;
@@ -221,8 +221,9 @@ body {
   position: relative;
   top: -150px;
   left: 50px;
+  padding-top:10px;
   display: block;
-  height: 48px;
+  height: 30px;
   width: 150px;
   text-shadow: 1px 1px 1px black;
 }
@@ -230,7 +231,8 @@ body {
 .text {
   display: block;
   position: relative;
-  top: -220px;
+  top: -200px;
+  margin-bottom:30px;
   left: 50px;
   font-size: 24px;
   height: 48px;

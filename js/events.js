@@ -7,7 +7,6 @@ var drawer5 = document.querySelector("#header");
 var height = window.innerHeight / 3;
 
 drawer1.style.cssText = "height:100%;";
-
 drawer5.style.cssText =
   "-webkit-transform:translate(0," +
   height.toFixed(0) +
@@ -21,7 +20,6 @@ function toopen() {
   drawer2.classList.add("open");
   drawer3.classList.add("open");
   drawer4.classList.add("open");
-
   drawer5.style.cssText =
     "-webkit-transform:translate(0, 0px);transform:translate(0, 0px); transition: all 800ms cubic-bezier(0.645,.045,.355,1);";
   document.getElementById("show-content").remove();
