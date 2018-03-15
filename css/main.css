@@ -1,7 +1,8 @@
 .wrapper {
   position: absolute;
   width: 100%;
-
+  
+  min-height:100%;
   min-width: 340px;
 
   border: 0;
@@ -22,13 +23,13 @@
   justify-content: center;
 }
 
-.gridheader {
+#header {
   order: 1;
   width: 80%;
 
 
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: 30px;
 
   justify-content: space-around;
@@ -57,15 +58,14 @@
 
   align-self: center;
   text-align: center;
+    animation: polygons 1.5s infinite;
 }
 
 #show-content img {
   cursor: pointer;
 }
 
-#show-content.animation {
-  animation: polygons 1.5s infinite;
-}
+
 
 @keyframes polygons {
   50% {
@@ -91,7 +91,7 @@
   max-width: 830px;
 }
 
-.gridheader.open,
+#header.open,
 .photo.open,
 .myportfolio.open,
 .gridfooter.open {
@@ -259,11 +259,6 @@
   background-color: blue;
 }
 
-.gridheader.open {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1);
-}
 
 body {
   margin: 0;
