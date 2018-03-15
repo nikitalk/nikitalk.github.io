@@ -1,8 +1,8 @@
 var menu = document.querySelector("#show-content");
 var drawer1 = document.querySelector(".wrapper");
 var drawer2 = document.querySelector(".photo");
-var drawer3 = document.querySelector(".myportfolio");
-var drawer4 = document.querySelector(".gridfooter");
+var drawer3 = document.querySelector(".portfolio");
+var drawer4 = document.querySelector(".footer");
 var drawer5 = document.querySelector("#header");
 var height = window.innerHeight / 3;
 
