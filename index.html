@@ -6,156 +6,148 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nikita L. Karavaev Portfolio</title>
-  <link href="css/main.css" rel="stylesheet">
-  <!--  <link href="css/responsive.css" rel="stylesheet"> -->
+  <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Orbitron:500" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
 </head>
 
 <body>
-
   <div class="wrapper">
-    <!--   <div class="grid"> -->
-    <header class="gridheader">
-
-
-
-
+    <header id="header">
       <div class="logo">
-        <img src="img/logonew3.svg" width=50 height=50> </div>
-      <div class="title">Nikita L. Karavaev<br>Portfolio</p>
+        <img src="img/logo.svg" width=50 height=50 alt="Logo">
       </div>
-
-
-      <div id="show-about-me" class="anima3">
-        
-            
-        <img src="img/arrow.svg" width=50>
-       
-    
+      <div class="title">
+        <p>Nikita L. Karavaev
+          <br>Portfolio</p>
       </div>
-
-
-
+      <div id="show-content">
+        <img src="img/arrow.svg" width=50 alt="Arrow">
+      </div>
     </header>
 
-
-
-    <section class="photo">
-
-
+    <div class="photo">
       <picture>
         <source media="(max-width: 760px)" srcset="img/web-developments.jpg">
-
         <source media="(max-width: 850px)" srcset="img/web-development517w.jpg">
-        <source media="(max-width: 989px)" srcset="img/web-development760w.jpg">
-        <source media="(min-width: 990px)" srcset="img/web-development.jpg">
-        <img src="img/web-development.jpg" alt="Web-development">
+        <img src="img/web-development.jpg" alt="Central Picture">
       </picture>
-    </section>
+    </div>
 
+    <main class="portfolio">
+      <a class="work" href="pixelartmaker/index.html">
+        <div class="label">
+          <span class="work-1-background"></span>
+          <span class="text">
+            Pixel Art Maker
+          </span>
+          <span class="button">
+            Show the Project
+          </span>
+        </div>
+      </a>
+      <a class="work" href="htmlproject/index.html">
+        <div class="label">
+          <span class="work-2-background"> </span>
+          <span class="text">
+            HTML<br> Project
+          </span>
+          <span class="button">
+            Show the Project
+          </span>
+        </div>
+      </a>
+      <a class="work" href="cssproject/card.html">
+        <div class="label">
+          <span class="work-3-background"> </span>
+          <span class="text">
+            CSS<br> Project
+          </span>
+          <span class="button">
+            Show the Project
+          </span>
+        </div>
+      </a>
 
+      <a class="work" href="#">
+        <div class="label">
+           <span class="work-0-background"> </span>
+          <span class="text">
+            Memory Game
+          </span>
+          <span class="button">
+            Soon
+          </span>
+        </div>
+      </a>
 
-    <main class="myportfolio">
+      <a class="work" href="#">
+        <div class="label">
+          <span class="work-0-background"> </span>
+          <span class="text">
+            Classic Arcade Game
+          </span>
+          <span class="button">
+            Soon
+          </span>
+        </div>
+      </a>
+      <a class="work" href="#">
+        <div class="label">
+          <span class="work-0-background"> </span>
+          <span class="text">
+            Feed Reader Testing
+          </span>
+          <span class="button">
+            Soon
+          </span>
+        </div>
+      </a>
 
-      
-       
-        <a class="work-1" href="pixelartmaker/index.html">
-          <div class="label">
-             <span class="bw1"> </span>
-             <span class="text"><p>Pixel Art Maker</p></span>
-          <span class="button"><p>Show the Project</p></span>
-          </div>
-        </a>
+      <a class="work" href="#">
+        <div class="label">
+          <span class="work-0-background"> </span>
+          <span class="text">
+            Restaurant Reviews
+          </span>
+          <span class="button">
+            Soon
+          </span>
+        </div>
+      </a>
 
-        <a class="work-1" href="htmlproject/index.html">
-          <div class="label">
-             <span class="bw2"> </span>
-             <span class="text"><p>HTML Project</p></span>
-          <span class="button"><p>Show the Project</p></span>
-          </div>
-        </a>
-    
-        <a class="work-1" href="cssproject/card.html">
-          <div class="label">
-             <span class="bw3"> </span>
-             <span class="text"><p>CSS<br> Project</p></span>
-          <span class="button"><p>Show the Project</p></span>
-          </div>
-        </a>
-
-     
-
-
+      <a class="work" href="#">
+        <div class="label">
+          <span class="work-0-background"> </span>
+          <span class="text">
+            MyReads Project
+          </span>
+          <span class="button">
+            Soon
+          </span>
+        </div>
+      </a>
+      <a class="work" href="#">
+        <div class="label">
+          <span class="work-0-background"> </span>
+          <span class="text">
+            Neighborhood Map
+          </span>
+          <span class="button">
+            Soon
+          </span>
+        </div>
+      </a>
 
     </main>
 
-    <footer class="gridfooter">
+    <footer class="footer">
       <p>&copy; Copyright by Nikita L. Karavaev, 2018</p>
-
-
     </footer>
-    <!--   </div> -->
   </div>
 
   <script src="js/events.js"></script>
-  <!-- <script>
-    /*
-     * Open the drawer when the menu ison is clicked.
-     */
-    var menu = document.querySelector('#show-about-me');
-      var drawer = document.querySelector('.mybio');
-       var drawer2 = document.querySelector('.myphoto');
-       var drawer3 = document.querySelector('.gridheader');
-       var drawer4 = document.querySelector('.mysites');
-  var menu2 = document.querySelector('#show-menu');
-  var drawer5 = document.querySelector('.aboutme');
- var drawer6 = document.querySelector('.show-m');
- var drawer7 = document.querySelector('.mylogos');
-  var drawer8 = document.querySelector('.mycards');
-  var drawer9 = document.querySelector('.social');
-  var drawer10 = document.querySelector('.myart');
-  var drawer11 = document.querySelector('.myscience');
-   var drawer12 = document.querySelector('.mycv');
-  var drawer13 = document.querySelector('.gridfooter');
-  var drawer14 = document.querySelector('.mysocial');
-    menu.addEventListener('click mousewheel', function (e) {
-      drawer.classList.toggle('open');
-      drawer2.classList.toggle('open');
-      drawer3.classList.toggle('open');
-      menu2.classList.toggle('open');
-   drawer9.classList.toggle('open');
-     
-    
-      document.getElementById("show-about-me").remove();
-      document.getElementById("show-el").remove();
-      e.stopPropagation();
-    });
 
-    
-
-        menu2.addEventListener('click', function (e) {
-         drawer4.classList.toggle('open');
-         drawer7.classList.toggle('open');
-          drawer8.classList.toggle('open');
-            drawer10.classList.toggle('open'); 
-            drawer11.classList.toggle('open');
-             drawer12.classList.toggle('open');
-              drawer13.classList.toggle('open');
-              drawer14.classList.toggle('open');
-           /*     drawer5.classList.toggle('open'); */
-     document.getElementById("show-menu").remove();
-     document.getElementById("show-el2").remove();
-          e.stopPropagation();
-        });
-
-        drawer4.addEventListener('click', function (e) {
-            drawer4.classList.toggle('show');
-
-            e.stopPropagation();
-          });
-    
-  </script> -->
 </body>
 
 </html>
